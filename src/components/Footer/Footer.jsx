@@ -5,7 +5,7 @@ import linkedinLogo from "../../assets/LinkedIn-Logos/LI-In-Bug.png";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col bg-back-beige rounded-xl">
+    <footer className="flex flex-col bg-back-beige rounded-xl w-full">
       <div className="h-80">
         <div className="h-full w-full flex flex-row justify-center items-center ">
           <div className=" flex flex-col h-full w-3/4">
