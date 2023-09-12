@@ -8,7 +8,9 @@ export default {
     extend: {
       colors: {
         'back-beige': '#f5ebe0',
-        "brown-font": "#361E0C"
+        "brown-font": "#361E0C",
+        "green-background": "#2C3E17",
+        "beige-background": "#F4EBD0"
       }
     },
   },

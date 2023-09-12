@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 
 const Header = () => {
   return (
@@ -9,7 +11,7 @@ const Header = () => {
           </a>
         </div>
         <div className="w-4/6 text-xl flex justify-center items-center gap-20">
-          <a href="" className="nav-link ">About</a>
+          <Link to="/about" className="nav-link">About</Link>
           <a href="" className="nav-link ">My projects</a>
           <a href="" className="nav-link ">Blog</a>
           <a href="" className="nav-link ">Contact</a>

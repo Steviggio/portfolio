@@ -3,11 +3,11 @@ import Header from "../Header/Header"
 import Body from "../Body/Body"
 
 
-const Layout = () => {
+const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <Body />
+      {children}
       <Footer />
     </>
   )

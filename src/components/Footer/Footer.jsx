@@ -16,8 +16,8 @@ const Footer = () => {
             </div>
             <div className="flex flex-row w-full justify-center items-center gap-28 h-1/4">
               <a className="hover:scale-125 duration-300" href="https://www.linkedin.com/in/stevemothmora/" target="_blank"><img className="h-14" src={githubLogo} alt="" /></a>
-              <a className="hover:scale-125 duration-300" href="https://github.com/Steviggio" target="_blank"><img className="h-14" src={twitterLogo} alt="" /></a>
-              <a className="hover:scale-125 duration-300" href=""><img className="h-14" src={linkedinLogo} alt="Linkedin Logo" /></a>
+              <a className="hover:scale-125 duration-300" href="https://github.com/Steviggio" target="_blank"><img className="h-12" src={twitterLogo} alt="" /></a>
+              <a className="hover:scale-125 duration-300" href=""><img className="h-12" src={linkedinLogo} alt="Linkedin Logo" /></a>
             </div>
           </div>
           <Form className="flex flex-col h-full w-2/6 justify-center items-center " method="post" action="">

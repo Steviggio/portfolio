@@ -7,6 +7,7 @@ import Footer from './components/Footer/Footer.jsx'
 import './index.css'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 import Layout from './components/Layout/Layout.jsx'
+import About from './components/About/About.jsx'
 
 
 const router = createBrowserRouter(
@@ -16,7 +17,8 @@ const router = createBrowserRouter(
       <Route path="/layout" element={<Layout />} />
       <Route path="/header" element={<Header />} />
       <Route path="/footer" element={<Footer />} />
-      <Route path="/body" element={<Body />} />
+      <Route path="/body" element={<Layout children={<Body />} />} />
+      <Route path="/about" element={<Layout children={<About />} />} />
     </>
   ))
 
