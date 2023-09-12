@@ -1,26 +1,26 @@
 import { Form } from "react-router-dom";
-import githubLogo from "../../assets/github-mark/github-mark.png";
-import twitterLogo from "../../assets/twitter/logo-black.png";
-import linkedinLogo from "../../assets/LinkedIn-Logos/LI-In-Bug.png";
+import githubLogo from "../../../assets/github-mark/github-mark.png";
+import twitterLogo from "../../../assets/twitter/logo-black.png";
+import linkedinLogo from "../../../assets/LinkedIn-Logos/LI-In-Bug.png";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col bg-back-beige rounded-xl w-full">
+    <footer className="flex flex-col bg-back-beige px-10 py-6 rounded-b-md w-full">
       <div className="h-80">
         <div className="h-full w-full flex flex-row justify-center items-center ">
           <div className=" flex flex-col h-full w-3/4">
             <div className="flex flex-col h-4/6 items-start pl-5 pt-5">
               <h3 className="text-4xl font-bold text-brown-font mb-3">Contact me </h3>
-              <p className="text-2xl ">Via email : <a href="mailto:steviggio@gmail.com" type="email">steviggio@gmail.com</a></p>
-              <p className="text-2xl">Via this contact form :</p>
+              <p className="text-xl ">Via email : <a href="mailto:steviggio@gmail.com" type="email">steviggio@gmail.com</a></p>
+              <p className="text-xl">Via this contact form :</p>
             </div>
             <div className="flex flex-row w-full justify-center items-center gap-28 h-1/4">
-              <a className="hover:scale-125 duration-300" href="https://www.linkedin.com/in/stevemothmora/" target="_blank"><img className="h-14" src={githubLogo} alt="" /></a>
-              <a className="hover:scale-125 duration-300" href="https://github.com/Steviggio" target="_blank"><img className="h-12" src={twitterLogo} alt="" /></a>
-              <a className="hover:scale-125 duration-300" href=""><img className="h-12" src={linkedinLogo} alt="Linkedin Logo" /></a>
+              <a className="hover:scale-125 duration-300" href="https://github.com/Steviggio" target="_blank"><img className="h-14" src={githubLogo} alt="" /></a>
+              <a className="hover:scale-125 duration-300" href="" target="_blank"><img className="h-12" src={twitterLogo} alt="" /></a>
+              <a className="hover:scale-125 duration-300" href="https://www.linkedin.com/in/stevemothmora/" target="_blank"><img className="h-12"  src={linkedinLogo} alt="Linkedin Logo" /></a>
             </div>
           </div>
-          <Form className="flex flex-col h-full w-2/6 justify-center items-center " method="post" action="">
+          <Form className="flex flex-col h-full w-2/6 border-4 justify-center items-center " method="post" action="">
             <label className="text-xl font-bold text-brown-font" htmlFor="email">Email</label>
             <input className="border-2 w-3/4 border-black focus:outline-none rounded-lg " type="text" name='email' />
             <label className="text-xl font-bold text-brown-font" htmlFor="message">Message</label>

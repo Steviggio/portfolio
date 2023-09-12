@@ -2,12 +2,13 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import Body from './components/Body/Body.jsx'
-import Header from './components/Header/Header.jsx'
-import Footer from './components/Footer/Footer.jsx'
+import Header from './components/Layout/Header/Header.jsx'
+import Footer from './components/Layout/Footer/Footer.jsx'
 import './index.css'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 import Layout from './components/Layout/Layout.jsx'
-import About from './components/About/About.jsx'
+import About from './pages/About/About.jsx'
+import Tiles from './components/Tiles/Tiles.jsx'
 
 
 const router = createBrowserRouter(
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
       <Route path="/footer" element={<Footer />} />
       <Route path="/body" element={<Layout children={<Body />} />} />
       <Route path="/about" element={<Layout children={<About />} />} />
+      <Route path="/tiles" element={<Tiles />} />
     </>
   ))
 

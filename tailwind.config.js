@@ -11,6 +11,9 @@ export default {
         "brown-font": "#361E0C",
         "green-background": "#2C3E17",
         "beige-background": "#F4EBD0"
+      },
+      fontFamily: {
+        "kaush": ['Kaushan Script, cursive', ]
       }
     },
   },
