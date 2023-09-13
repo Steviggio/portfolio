@@ -4,7 +4,7 @@ import Body from "../../pages/Body/Body"
 import About from '../../pages/About/About'
 
 
-const Layout = ({ children }) => {
+const Layout = () => {
   return (
     <>
       <Header />

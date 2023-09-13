@@ -7,6 +7,8 @@ export default {
   theme: {
     extend: {
       colors: {
+        "light-blue": "#A5C0DD",
+        "light-green": "#97A769",
         'back-beige': '#f5ebe0',
         "brown-font": "#361E0C",
         "green-background": "#2C3E17",

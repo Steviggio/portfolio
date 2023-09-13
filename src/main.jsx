@@ -18,8 +18,7 @@ const router = createBrowserRouter(
       <Route path="/layout" element={<Layout />} />
       <Route path="/header" element={<Header />} />
       <Route path="/footer" element={<Footer />} />
-      <Route path="/body" element={<Layout children={<Body />} />} />
-      <Route path="/about" element={<Layout children={<About />} />} />
+      <Route path="/about" element={<About />} />
       <Route path="/tiles" element={<Tiles />} />
       <Route path="/projects" element={<Projects />} />
     </>
