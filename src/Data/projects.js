@@ -61,7 +61,7 @@ const projectInfos = [{
   usedLanguages: [],
   role: "Frontend developper",
   usedFrameworks: [],
-  tasks: "Debug and ptimize the SEO of a website"
+  tasks: "Debug and optimize the SEO of a website"
 }
 ]
 

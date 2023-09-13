@@ -1,13 +1,15 @@
 import Footer from "./Footer/Footer"
 import Header from "./Header/Header"
-import Body from "../Body/Body"
+import Body from "../../pages/Body/Body"
+import About from '../../pages/About/About'
 
 
 const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      {children}
+      <Body />
+      <About />
       <Footer />
     </>
   )

@@ -17,6 +17,7 @@ const App = () => {
           <Link to="/footer">Footer</Link>
           <Link to="/layout">Layout</Link>
           <Link to="/tiles">Tiles</Link>
+          <Link to="/projects">Projects</Link>
         </section>
       </div>
     </>

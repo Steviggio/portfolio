@@ -5,14 +5,14 @@ const Body = () => {
   return (
     <>
       <main>
-        <section>
-          <div className="flex ">
+        <section className='bg-back-beige'>
+          <div className="flex mx-auto w-4/5 py-16">
             <div className="flex flex-col w-1/2 justify-center gap-5 text-left">
               <h3 className="pl-3 text-7xl underline">Steviggio</h3>
-              <p className="pl-3  text-2xl">Hey, i'm Steve and i use React.js / Node.js to develop websites.</p>
+              <p className="pl-3 text-2xl">Hey, i'm Steve and i use React.js / Node.js to create web applications.</p>
             </div>
             <div className=" flex flex-col w-1/2 items-center justify-center">
-              <h3 className='mt-2 text-2xl underline mb-3'>Skills tree</h3>
+              {/* <h3 className='mt-2 text-2xl underline mb-3'>Skills tree</h3> */}
               <div className='my-2 h-72 w-9/12 flex flex-col justify-center border rounded-t-full'>
                 <h4 className='font-semi-bold underline text-xl'>Frontend</h4>
                 <img className='h-60 object-contain' src={frontendDiag} alt="Frontend diagram" />
