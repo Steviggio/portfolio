@@ -1,25 +1,20 @@
-import githubLogo from "../assets/github-mark/github-mark.png";
-import twitterLogo from "../assets/twitter/logo-black.png";
-import linkedinLogo from "../assets/LinkedIn-Logos/LI-In-Bug.png";
-// https://github.com/Steviggio
-// https://www.linkedin.com/in/stevemothmora/
+masteredToolstemplate = {
+   name: "",
+   icon: ""
+}
 
 
-const SocialData = [{
-  platform: "Github",
-  icon: { githubLogo },
-  link: "https://github.com/Steviggio",
+
+const masteredTools = [{
+   name: "Github",
+   icon: ""
 },
 {
-  platform: "Linkedin",
-  icon: { linkedinLogo },
-  link: "https://www.linkedin.com/in/stevemothmora/",
+   name: "GitLab",
+   icon: "icon"
 },
 {
-  platform: "twitter",
-  icon: { twitterLogo },
-  link: "https://twitter.com/Steviggio"
+   name: "",
+   icon: ""
 }
 ]
-
-export default SocialData;
