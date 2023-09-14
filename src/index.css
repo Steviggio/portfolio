@@ -26,6 +26,7 @@
 @layer base {
 
   html {
+    scroll-behavior: smooth;
     width: 100%;
     font-family: "Lexend Deca", sans-serif;
     font-weight: 100;

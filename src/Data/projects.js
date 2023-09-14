@@ -1,23 +1,23 @@
 import MVG_img from "../assets/projects/MVG-home.png";
 
-listTemplate =
-{
-  name: "",
-  usedLanguages: [],
-  role: "",
-  usedFrameworks: [],
-  tasks: ""
-}
+// listTemplate =
+// {
+//   name: "",
+//   usedLanguages: [],
+//   role: "",
+//   usedFrameworks: [],
+//   tasks: ""
+// }
 
-tasksTemplate = [{
-  language: "en",
-  description: ""
-},
-{
-  language: "fr",
-  description: "",
-}
-]
+// tasksTemplate = [{
+//   language: "en",
+//   description: ""
+// },
+// {
+//   language: "fr",
+//   description: "",
+// }
+// ]
 
 
 const projectInfos = [{
@@ -25,46 +25,41 @@ const projectInfos = [{
   usedLanguages: ["HTML", "CSS", "JavaScript"],
   role: "Backend developper",
   usedFrameworks: ["Express.js", "React.js"],
-  tasks: ["Create an API REST", "Configure an authentication system", "Store and secure datas", "Implement secured CRUD requests"]
+  tasks: ["Création une API REST", "Configuration un système d'authentification", "Stockage et sécurisation de données", "Implémentation sécurisée de requêtes CRUD"]
 },
 {
   name: "Booki",
   usedLanguages: ["HTML", "CSS"],
   role: "Frontend developper",
   usedFrameworks: [],
-  tasks: [{
-    language: "en",
-    description: "Create a reponsive website according to a template"
-  },
-  {
-    language: "fr",
-    description: "",
-  }
-  ]
+  tasks: ["Intégration ", "", "", ""]
 },
 {
   name: "Kasa",
   usedLanguages: ["HTML", "CSS", "JavaScript"],
   role: "Frontend developper",
   usedFrameworks: ["React"],
-  tasks: "Create a React App"
+  tasks: ["Création d'une application web avec React.js", "Routing de l'application web avec react-router", "Développement d'une interface web avec Sass"]
 },
 {
   name: "Sophie Bluel",
   usedLanguages: ["HTML", "CSS", "JavaScript"],
   role: "Frontend developper",
   usedFrameworks: [],
-  tasks: "Create a dynamic website with JavaScript"
+  tasks: ["Création d'une application web dynamique avec JavaScript", ""]
 },
 {
   name: "Nina Carducci",
-  usedLanguages: [],
+  usedLanguages: ["HTML", "CSS", "JavaScript"],
   role: "Frontend developper",
   usedFrameworks: [],
-  tasks: "Debug and optimize the SEO of a website"
+  tasks: ["Débogage d'une application web", "Optimisation des performances", "Optimisation du SEO"]
 }
 ]
 
 const frontendSkills = [{}];
 
 const backendSkills = [{}]
+
+
+export { projectInfos };

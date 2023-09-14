@@ -4,8 +4,8 @@ import backendDiag from '../../assets/Backend/Backend.png'
 const Body = () => {
   return (
     <>
-      <main>
-        <section className='bg-back-beige'>
+
+        <section id="body-section" className='bg-back-beige'>
           <div className="flex mx-auto w-4/5 py-16">
             <div className="flex flex-col w-1/2 justify-center gap-5 text-left">
               <h3 className="pl-3 text-7xl underline">Steviggio</h3>
@@ -24,7 +24,7 @@ const Body = () => {
             </div>
           </div>
         </section>
-      </main>
+
     </>
   )
 }

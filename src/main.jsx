@@ -10,6 +10,7 @@ import Layout from './components/Layout/Layout.jsx'
 import About from './pages/About/About.jsx'
 import Tiles from './components/Tiles/Tiles.jsx'
 import Projects from './pages/Projects/Projects.jsx'
+import Hover from './components/Hover/Hover.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -21,6 +22,7 @@ const router = createBrowserRouter(
       <Route path="/about" element={<About />} />
       <Route path="/tiles" element={<Tiles />} />
       <Route path="/projects" element={<Projects />} />
+      <Route path="/hover" element={<Hover />} />
     </>
   ))
 

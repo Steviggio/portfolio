@@ -1,9 +1,11 @@
-import { Link } from "react-router-dom"
-
+import React, { useRef } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
+
+
   return (
-    <>
+    <header>
       <nav className="sticky top-0 drop-shadow-md border-b border-gray-300 bg-back-beige h-20 flex justify-start">
         <div className="w-2/6 flex justify-center items-center">
           <Link to="/body" href="" className="font-bold text-4xl">
@@ -11,15 +13,14 @@ const Header = () => {
           </Link>
         </div>
         <div className="w-4/6 text-xl flex justify-center items-center gap-20">
-          <Link to="/about" className="nav-link">À propos</Link>
-          <a href="" className="nav-link">Mes services</a>
-          <a href="" className="nav-link ">Mes projets</a>
-          <a href="" className="nav-link ">Blog</a>
-          <a href="" className="nav-link ">Me contactez</a>
+          <a href="#about-section" className="nav-link">À propos</a>
+          <a href="#body-section" className="nav-link">Body</a>
+          <a href="#projects-section" className="nav-link">Mes projets</a>
+          <a href="#contact-section" className="nav-link">Me contactez</a>
         </div>
       </nav>
-    </>
-  )
-}
+    </header>
+  );
+};
 
-export default Header
+export default Header;

@@ -1,9 +1,10 @@
 import htmlIcon from '../assets/icons/html.png'
 import nodeIcon from '../assets/icons/nodejs.png'
-import reactIcon from '../assets/icons/react.png'
+import reactIcon from '../assets/icons/react2.png'
 import cssIcon from '../assets/icons/css.png'
 import expressIcon from '../assets/icons/expressjs.png'
 import javascriptIcon from "../assets/icons/js.png"
+import sassIcon from "../assets/icons/sass2.png"
 
 
 // iconTemplate = {
@@ -64,12 +65,34 @@ const kasaIcons = [{
   iconUrl: htmlIcon
 },
 {
-  name: "CSS",
-  iconUrl: cssIcon
+  name: "Sass",
+  iconUrl: sassIcon
 }, {
-  name: "Javascript",
-  iconUrl: javascriptIcon
+  name: "React.js",
+  iconUrl: reactIcon
 },]
+
+const bluelIcons = [{
+
+}]
+
+const ninaIcons = [{
+  name: "",
+  iconUrl: "", 
+},
+{
+  name: "",
+  iconUrl: "", 
+},
+{
+  name: "",
+  iconUrl: "", 
+},
+{
+  name: "",
+  iconUrl: "", 
+}
+]
 
 
 export { iconsList, mvgIcons, bookiIcons, kasaIcons };
