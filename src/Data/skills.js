@@ -1,3 +1,20 @@
+import github from "../assets/icons/"
+import gitlab from ""
+import html from ""
+import css from ""
+import jest from ""
+import eslint from ""
+import babel from ""
+import vue from ""
+import vite from ""
+import js from ""
+import node from ""
+import react from ""
+import mongo from ""
+import mysql from ""
+import npm from ""
+import webpack from ""
+
 
 
 masteredToolstemplate = {
@@ -64,7 +81,7 @@ const masteredTools = [{
    icon: ""
 },
 {
-   name: "",
+   name: "Vue",
    icon: ""
 }
 ]
