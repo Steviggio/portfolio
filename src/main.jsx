@@ -11,6 +11,7 @@ import About from './pages/About/About.jsx'
 import Tiles from './components/Tiles/Tiles.jsx'
 import Projects from './pages/Projects/Projects.jsx'
 import Hover from './components/Hover/Hover.jsx'
+import SkillsList from './components/SkillsList/SkillsList.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,6 +24,7 @@ const router = createBrowserRouter(
       <Route path="/tiles" element={<Tiles />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/hover" element={<Hover />} />
+      <Route path="/skills" element={<SkillsList />} />
     </>
   ))
 

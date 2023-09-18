@@ -3,7 +3,6 @@ import './App.css'
 import { Link } from "react-router-dom";
 
 
-
 const App = () => {
   return (
     <>
@@ -18,6 +17,7 @@ const App = () => {
           <Link to="/layout">Layout</Link>
           <Link to="/tiles">Tiles</Link>
           <Link to="/projects">Projects</Link>
+          <Link to="/skills">skills</Link>
         </section>
       </div>
     </>
