@@ -1,88 +1,89 @@
-import github from "../assets/icons/"
-import gitlab from "../assets/icons/"
+import github from "../assets/icons/github.-mark.png"
+import gitlab from "../assets/icons/gitlab.png"
 import html from "../assets/icons/html.png"
 import css from "../assets/icons/css.png"
-import jest from "../assets/icons/"
-import eslint from "../assets/icons/eslint"
-import babel from "../assets/icons/"
-import vue from "../assets/icons/"
-import vite from "../assets/icons/"
-import js from "../assets/icons/"
-import node from "../assets/icons/"
-import react from "../assets/icons/"
-import mongo from "../assets/icons/"
-import mysql from "../assets/icons/"
-import npm from "../assets/icons/npm"
-import webpack from "../assets/icons/"
-import nextjs from "../assets/icons/nextjs"
-import postgresql from "../assets/icons/postgresql"
+import jest from "../assets/icons/jest3.png"
+import eslint from "../assets/icons/eslint/eslint.png"
+import babel from "../assets/icons/babel.png"
+import vue from "../assets/icons/vuejs/vue-max.png"
+import vite from "../assets/icons/vite2.png"
+import js from "../assets/icons/js.png"
+import node from "../assets/icons/nodejs.png"
+import react from "../assets/icons/react2.png"
+import mongo from "../assets/icons/mongodb.png"
+import mysql from "../assets/icons/mysql-img.png"
+import npm from "../assets/icons/npm/npm-max.png"
+import webpack from "../assets/icons/webpack/webpack-max.png"
+import nextjs from "../assets/icons/nextjs/nextjs-max.png"
+import postgresql from "../assets/icons/postgresql/postgresql-max.png"
+import python from "../assets/icons/python/python-max.png"
 
 
-masteredToolstemplate = {
-   name: "",
-   icon: ""
-}
 
+// masteredToolstemplate = {
+//    name: "",
+//    icon: ""
+// }
 
 
 const masteredTools = [{
    name: "Github",
-   icon: ""
+   icon: github
 },
 {
    name: "GitLab",
-   icon: ""
+   icon: gitlab
 },
 {
    name: "HTML",
-   icon: ""
+   icon: html
 },
 {
    name: "CSS",
-   icon: ""
+   icon: css
 },
 {
    name: "JavaScript",
-   icon: ""
+   icon: js
 },
 {
    name: "React.js",
-   icon: ""
+   icon: react
 },
 {
    name: "Node.js",
-   icon: ""
+   icon: node
 },
 {
    name: "MongoDB",
-   icon: ""
+   icon: mongo
 },
 {
    name: "MySQL",
-   icon: ""
+   icon: mysql
 },
 {
    name: "npm",
-   icon: ""
+   icon: npm
 },
 {
    name: "Babel",
-   icon: ""
+   icon: babel
 },
 {
    name: "jest",
-   icon: ""
+   icon: jest
 },
 {
    name: "webpack",
-   icon: ""
+   icon: webpack
 },
 {
    name: "eslint",
-   icon: ""
+   icon: eslint
 },
 {
    name: "Vue",
-   icon: ""
+   icon: vue
 }
 ]
