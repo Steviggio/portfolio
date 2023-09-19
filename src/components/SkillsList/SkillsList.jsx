@@ -18,15 +18,14 @@ const SkillsList = ({ name }) => {
   }
 
   return (
-    <div className="flex flex-col w-fit h-36 border-4 rounded-lg border-blue-300">
-      <h4 className="mb-6 text-xl">{skillInfo.name}</h4>
+    <div className="flex flex-col items-center rounded-md w-fit h-fit shadow-2xl mx-2">
+      <h4 className="mb-3 mx-2 text-xl">{skillInfo.name}</h4>
       <ul className="flex gap-2">
         {/* ... */}
         {/* Utilisez skillInfo.icon et skillInfo.name pour afficher l'icône et le nom de la compétence */}
         <div>
-          <li className="w-14 h-14 rounded-full border-2 border-blue-400 flex justify-center items-center">
-            <img className="rounded-full " src={skillInfo.icon} alt={`${name} logo`} />
-            <h5>{name}</h5>
+          <li className="w-14 h-14 rounded-full flex justify-center items-center m-1">
+            <img className="rounded-xl " src={skillInfo.icon} alt={`${name} logo`} />
           </li>
         </div>
         {/* ... */}

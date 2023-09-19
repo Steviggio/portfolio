@@ -28,7 +28,7 @@ const masteredTools = [{
    icon: github
 },
 {
-   name: "GitLab",
+   name: "Gitlab",
    icon: gitlab
 },
 {

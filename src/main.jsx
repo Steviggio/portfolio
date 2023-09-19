@@ -24,7 +24,7 @@ const router = createBrowserRouter(
       <Route path="/tiles" element={<Tiles />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/hover" element={<Hover />} />
-      <Route path="/skills" element={<SkillsList />} />
+      <Route path="/skills" element={<SkillsList name="Gitlab" />} />
     </>
   ))
 

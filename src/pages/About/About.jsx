@@ -20,27 +20,24 @@ const About = () => {
         <img src={profilePic} className="rounded-full h-96 w-96" alt="" />
       </div>
       {/* Skills / Tools / Languages used */}
-      {/* <div className="w-6/12 h-48 border-4 bg-white rounded-xl border-black mx-auto mb-14">
+      <div className="w-fit h-48 border-4 bg-white rounded-xl border-black mx-auto mb-14 ">
         <h3>Mes compétences</h3>
-        <div className="flex w-max">
-          <div className="flex flex-col">
-            <ul>
-              <li></li>
-            </ul>
-          </div>
-          <div className="flex flex-col">
-            <ul>
-              <li></li>
-            </ul>
-          </div>
-          <div className="flex flex-col">
-            <ul>
-              <li></li>
-            </ul>
-          </div>
+        <div className="flex flex-wrap w-max">
+          <SkillsList name='HTML'/>
+          <SkillsList name='CSS'/>
+          <SkillsList name='JavaScript'/>
+          <SkillsList name='React.js'/>
+          <SkillsList name='Github'/>
+          <SkillsList name='Gitlab'/>
+          <SkillsList name='MongoDB'/>
+          <SkillsList name='Node.js'/>
+          <SkillsList name='npm'/>
+          <SkillsList name='eslint'/>
+          <SkillsList name='Babel'/>
+          <SkillsList name='jest'/>
         </div>
-      </div> */}
-      < SkillsList name="github" />
+      </div>
+
     </section>
   )
 }
