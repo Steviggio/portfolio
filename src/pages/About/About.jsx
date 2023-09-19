@@ -20,21 +20,30 @@ const About = () => {
         <img src={profilePic} className="rounded-full h-96 w-96" alt="" />
       </div>
       {/* Skills / Tools / Languages used */}
-      <div className="w-fit h-48 border-4 bg-white rounded-xl border-black mx-auto mb-14 ">
-        <h3>Mes compétences</h3>
-        <div className="flex flex-wrap w-max">
-          <SkillsList name='HTML'/>
-          <SkillsList name='CSS'/>
-          <SkillsList name='JavaScript'/>
-          <SkillsList name='React.js'/>
-          <SkillsList name='Github'/>
-          <SkillsList name='Gitlab'/>
-          <SkillsList name='MongoDB'/>
-          <SkillsList name='Node.js'/>
-          <SkillsList name='npm'/>
-          <SkillsList name='eslint'/>
-          <SkillsList name='Babel'/>
-          <SkillsList name='jest'/>
+      <div className="w-fit h-fit border-4 bg-blue-50 rounded-xl mx-auto mb-14">
+        <h3 className="my-3 mb-5 text-2xl">Mes compétences</h3>
+        <div className="flex flex-wrap w-max mb-1">
+          <div className="flex flex-row rounded-md  mx-1 shadow-md shadow-slate-400 ">
+            <SkillsList name='HTML' />
+            <SkillsList name='CSS' />
+            <SkillsList name='JavaScript' />
+          </div>
+          <div className="flex flex-row rounded-md mx-1 shadow-md shadow-slate-400">
+            <SkillsList name='React.js' />
+            <SkillsList name='Node.js' />
+            <SkillsList name='Express.js' />
+            <SkillsList name='MongoDB' />
+          </div>
+          <div className="flex flex-row rounded-md mx-1 shadow-md shadow-slate-400">
+            <SkillsList name='Github' />
+            <SkillsList name='Gitlab' />
+          </div>
+          <div className="flex flex-row rounded-md mx-1 shadow-md shadow-slate-400">
+            <SkillsList name='npm' />
+            <SkillsList name='eslint' />
+            <SkillsList name='Babel' />
+            <SkillsList name='jest' />
+          </div>
         </div>
       </div>
 

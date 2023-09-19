@@ -10,7 +10,7 @@ export default {
         "dark-grey": "#323232",
         "brown-bg": "#ad8a62",
         "light-blue": "#EFFAFD",
-        "royal-blue":"#669bbc",
+        "royal-blue": "#669bbc",
         "light-green": "#a3b18a",
         "footer-blue": "#2c7da0",
         "eggplant": "#A0006D",
@@ -21,7 +21,8 @@ export default {
         "beige-background": "#FDF8F0"
       },
       fontFamily: {
-        "kaush": ['Kaushan Script, cursive', ]
+        "kaush": ['Kaushan Script, cursive',],
+        "Libre-franklin": ['Libre Franklin, sans-serif']
       }
     },
   },

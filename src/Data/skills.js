@@ -17,6 +17,7 @@ import webpack from "../assets/icons/webpack/webpack-max.png";
 import nextjs from "../assets/icons/nextjs/nextjs-max.png";
 import postgresql from "../assets/icons/postgresql/postgresql-max.png";
 import python from "../assets/icons/python/python-max.png";
+import express from "../assets/icons/expressjs.png"
 
 // masteredToolstemplate = {
 //    name: "",
@@ -94,6 +95,10 @@ const masteredTools = [{
 {
    name: "Python",
    icon: python
+},
+{
+   name: "Express.js",
+   icon: express
 }
 ]
 
