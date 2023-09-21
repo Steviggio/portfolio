@@ -16,13 +16,13 @@ const Hover = ({ name }) => {
 
   return (
     <>
-      <div className="flex flex-col justify-center gap-7">
+      <div className="flex flex-col justify-center gap-2">
         {/* Utilisez projectInfo pour accéder aux données spécifiques du projet */}
-        <h2 className="text-2xl">Application web : {projectInfo.name}</h2>
-        <ul className="leading-9">
-          <li>Role: {projectInfo.role}</li>
+        <h2 className="text-2xl md:text-base xl:text-xl" >Application web : {projectInfo.name}</h2>
+        <ul className="leading-3 md:leading-2">
+          <li className="text-lg md:text-sm xl:text-md pb-2">Role : {projectInfo.role}</li>
           {projectInfo.tasks.map((task, index) => {
-            return <li key={index}>{task}</li>;
+            return <li className="text-xl md:text-xs xl:text-md py-1 md:py-0.5" key={index}>{task}</li>;
           })}
         </ul>
         {/* ... Autres données spécifiques */}

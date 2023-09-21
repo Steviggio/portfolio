@@ -25,7 +25,7 @@ const projectInfos = [{
   usedLanguages: ["HTML", "CSS", "JavaScript"],
   role: "Backend developper",
   usedFrameworks: ["Express.js", "React.js"],
-  tasks: ["Création une API REST", "Configuration un système d'authentification", "Stockage et sécurisation de données", "Implémentation sécurisée de requêtes CRUD"]
+  tasks: ["Création d'une API REST", "Configuration d'un système d'authentification", "Stockage et sécurisation de données", "Implémentation sécurisée de requêtes CRUD"]
 },
 {
   name: "Booki",

@@ -22,6 +22,12 @@
   .steviggio-title {
     font-family: 'Kaushan Script', cursive;
   }
+
+  .input-props {
+    white-space: pre-wrap;
+    overflow: auto;
+    
+  }
 }
 
 @layer base {
@@ -32,6 +38,7 @@
     font-family: "Lexend Deca", sans-serif;
     font-weight: 100;
     scroll-behavior: smooth;
+    min-width: 478px;
   }
 
 }

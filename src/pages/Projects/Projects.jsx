@@ -13,18 +13,20 @@ const Projects = () => {
 
   return (
     // Section containing project tiles
-    <section id="projects-section" className="bg-white h-screen flex flex-col justify-center ">
+    <section id="projects-section" className="bg-white lg:h-screen flex flex-col justify-center my-5">
 
       <h3 className='text-5xl mb-10 underline'>Mes projets</h3>
       {/* Tiles Container */}
-      <div className="w-full justify-center flex pt-6 gap-10 h-fit px-8">
+      <div className="flex-col md:flex-row md:w-fit w-fit justify-center flex pt-6 gap-10 h-fit px-8">
 
         {/* Tiles list */}
-        <div className="flex relative flex-col w-3/12 gap-6 items-center p-5 bg-light-blue rounded-xl shadow-md h-fit">
+        <div className="flex relative flex-col md:w-3/12 gap-6 items-center p-5 bg-light-blue rounded-xl shadow-md h-fit">
           <figure className='relative'>
             <img className="h-fit rounded-xl shadow-sm" src={bookiImg} alt="" />
             <figcaption className='absolute bg-black bg-opacity-60 top-0 text-white flex justify-center items-center w-full h-full rounded-xl opacity-0 hover:opacity-100'>
-              <div className='relative top-0 left-0'><Hover name={"Booki"} /></div>
+              <div className='relative top-0 left-0'>
+                <Hover name={"Booki"} />
+              </div>
             </figcaption>
           </figure>
           <div className='h-fit w-fit flex flex-col justify-center pr-4 bg-white rounded-lg  shadow-md'>
@@ -38,11 +40,13 @@ const Projects = () => {
         </div>
 
 
-        <div className="flex relative flex-col items-center w-3/12 gap-6 p-5 bg-light-blue rounded-xl shadow-md h-fit">
+        <div className="flex relative flex-col items-center md:w-3/12 gap-6 p-5 bg-light-blue rounded-xl shadow-md h-fit">
           <figure className='relative'>
             <img className="h-fit object-cover rounded-xl" src={kasaHome2} alt="Kasa homepage" />
             <figcaption className='text-white absolute bg-black bg-opacity-60 top-0 flex justify-center items-center w-full h-full rounded-xl opacity-0 hover:opacity-100'>
-              <div className='relative top-0 left-0'><Hover name={"Kasa"} /></div>
+              <div className='relative top-0 left-0'>
+                <Hover name={"Kasa"} />
+              </div>
             </figcaption>
           </figure>
           <div className=' h-fit w-fit flex flex-col justify-center pr-4 bg-white rounded-lg  shadow-md'>
@@ -57,11 +61,13 @@ const Projects = () => {
         </div>
 
 
-        <div className=" flex relative flex-col  w-3/12 gap-6 items-center  p-5 bg-light-blue rounded-xl shadow-md h-fit">
+        <div className=" flex relative flex-col md:w-3/12 gap-6 items-center  p-5 bg-light-blue rounded-xl shadow-md h-fit">
           <figure className='relative'>
             <img className="h-fit object-contain rounded-xl" src={mvgHome} alt="MVG homepage" />
             <figcaption className='absolute bg-black bg-opacity-60 top-0 text-white flex justify-center items-center w-full h-full rounded-xl opacity-0 hover:opacity-100'>
-              <div className='relative top-0 left-0'><Hover name={"Mon Vieux Grimoire"} /></div>
+              <div className='relative top-0 left-0'>
+                <Hover name={"Mon Vieux Grimoire"} />
+              </div>
             </figcaption>
           </figure>
           <div className='h-fit w-fit flex flex-col justify-center pr-4 bg-white rounded-lg  shadow-md'>
