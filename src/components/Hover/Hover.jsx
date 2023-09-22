@@ -18,11 +18,11 @@ const Hover = ({ name }) => {
     <>
       <div className="flex flex-col justify-center gap-2">
         {/* Utilisez projectInfo pour accéder aux données spécifiques du projet */}
-        <h2 className="text-2xl md:text-base xl:text-xl" >Application web : {projectInfo.name}</h2>
+        <h2 className="text-2xl  md:text-sm lg:text-sm xl:text-xl" >Application web : {projectInfo.name}</h2>
         <ul className="leading-3 md:leading-2">
-          <li className="text-lg md:text-sm xl:text-md pb-2">Role : {projectInfo.role}</li>
+          <li className="text-xl md:text-xs xl:text-md pb-2">Role : {projectInfo.role}</li>
           {projectInfo.tasks.map((task, index) => {
-            return <li className="text-xl md:text-xs xl:text-md py-1 md:py-0.5" key={index}>{task}</li>;
+            return <li className="text-sm md:text-xs py-1 xl:text-base md:py-0.5" key={index}>- {task}</li>;
           })}
         </ul>
         {/* ... Autres données spécifiques */}

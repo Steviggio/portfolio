@@ -8,7 +8,7 @@ const Body = () => {
         <section id="body-section" className='bg-home-blue'>
           <div className="flex flex-col md:flex-row justify-center items-center gap-8 h-screen mx-auto w-4/5 py-16">
             <div className="flex flex-col w-2/3 justify-center gap-5 text-left">
-              <h3 className="pl-3 text-4xl md:text-5xl lg:text-8xl underline">Steviggio</h3>
+              <h3 className="pl-3 text-4xl md:text-6xl lg:text-8xl underline">Steviggio</h3>
               <p className="pl-3 md:text-3xl">Moi, c'est Steve et j'utilise React.js ainsi que Node.js pour créer des applications web.</p>
             </div>
             <div className=" flex flex-col w-1/2 items-center justify-center">

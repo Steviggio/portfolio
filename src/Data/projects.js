@@ -32,7 +32,7 @@ const projectInfos = [{
   usedLanguages: ["HTML", "CSS"],
   role: "Frontend developper",
   usedFrameworks: [],
-  tasks: ["Intégration ", "", "", ""]
+  tasks: ["Inplémentation d'une interface responsive", "Intégration d'une maquette en HTML/CSS"]
 },
 {
   name: "Kasa",
