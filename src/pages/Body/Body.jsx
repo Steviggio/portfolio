@@ -1,5 +1,6 @@
 import frontendDiag from '../../assets/Frontend/Frontend.png'
 import backendDiag from '../../assets/Backend/Backend.png'
+import React from "react";
 
 const Body = () => {
   return (

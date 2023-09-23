@@ -1,4 +1,5 @@
 import { projectInfos } from "../../Data/projects";
+import React from "react";
 
 // Transformez la liste en un objet avec le nom du projet comme clé
 const projectsByName = {};

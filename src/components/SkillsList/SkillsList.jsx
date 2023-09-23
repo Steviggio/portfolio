@@ -1,4 +1,5 @@
 import { masteredTools } from "../../Data/skills";
+import React from "react";
 
 const skillsByName = {};
 masteredTools.forEach((skill) => {

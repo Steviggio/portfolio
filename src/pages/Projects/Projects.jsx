@@ -3,6 +3,7 @@ import kasaHome2 from "../../assets/projects/Kasa-home-focus.png";
 import bookiImg from "../../assets/projects/Booki.png";
 import { kasaIcons, bookiIcons, mvgIcons, iconsList } from '../../Data/icons';
 import Hover from '../../components/Hover/Hover';
+import React from "react";
 
 
 

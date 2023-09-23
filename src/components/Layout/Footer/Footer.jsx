@@ -1,4 +1,4 @@
-import { Form } from "react-router-dom";
+import React from "react";
 import SocialData from "../../../Data/socials";
 
 const Footer = () => {
