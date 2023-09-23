@@ -11,8 +11,6 @@ const SkillsList = ({ name }) => {
   const skillName = name
   const skillInfo = skillsByName[skillName] // Utilisez skillByName pour obtenir les informations de compétence
 
-  console.log("0000000000000- le skillname: ", name);
-  console.log("0000000000000- les skillByName: ", skillsByName);
 
   if (!skillInfo) {
     return <div>Skill non trouvé</div>
