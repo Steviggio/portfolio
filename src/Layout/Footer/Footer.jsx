@@ -1,5 +1,5 @@
 import React from "react";
-import SocialData from "../../../Data/socials";
+import SocialData from "../../Data/socials";
 
 const Footer = () => {
   const datas = SocialData;
