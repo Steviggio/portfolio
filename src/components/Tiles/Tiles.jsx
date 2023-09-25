@@ -4,7 +4,6 @@ const Tiles = ({datas}) => {
 
   return (
     <>
-      {/* Tiles list */}
       <div className="flex flex-col w-2/6 gap-6 items-center p-5 bg-light-blue rounded-md shadow-md h-fit">
         <img className="h-fit w-full  rounded-xl shadow-sm" src="" alt="" />
         <div className='h-fit w-fit flex flex-col justify-center pr-4 bg-white rounded-lg  shadow-md'>

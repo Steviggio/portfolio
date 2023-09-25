@@ -1,7 +1,7 @@
 import { projectInfos } from "../../Data/projects";
 import React from "react";
 
-// Transformez la liste en un objet avec le nom du projet comme clé
+
 const projectsByName = {};
 projectInfos.forEach((project) => {
   projectsByName[project.name] = project;
@@ -9,7 +9,7 @@ projectInfos.forEach((project) => {
 
 const Hover = ({ name }) => {
   const projectName = name;
-  const projectInfo = projectsByName[projectName]; // Utilisez l'objet projectsByName
+  const projectInfo = projectsByName[projectName]; 
 
   if (!projectInfo) {
     return <div>Projet non trouvé</div>;
@@ -26,7 +26,7 @@ const Hover = ({ name }) => {
             return <li className="text-sm md:text-xl lg:text-xs py-1 xl:text-xs 2xl:text-base md:py-0.5" key={index}>- {task}</li>;
           })}
         </ul>
-        {/* ... Autres données spécifiques */}
+
       </div>
     </>
   );
