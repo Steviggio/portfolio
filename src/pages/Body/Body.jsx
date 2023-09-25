@@ -1,5 +1,5 @@
-import frontendDiag from '../../assets/Frontend/Frontend.png'
-import backendDiag from '../../assets/Backend/Backend.png'
+import frontendDiag from '../../assets/Frontend/frontend.webp'
+import backendDiag from '../../assets/Backend/backend.webp'
 import React from "react";
 
 const Body = () => {

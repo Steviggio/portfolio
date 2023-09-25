@@ -1,4 +1,4 @@
-import profilePic from "../../assets/profile-pic/steve.jpg"
+import profilePic from "../../assets/profile-pic/steve.webp"
 import SkillsList from "../../components/SkillsList/SkillsList";
 import React from "react";
 
@@ -7,11 +7,11 @@ const About = () => {
     <section id="about-section" className="relative h-full w-full flex flex-row flex-wrap justify-center bg-royal-blue ">
       <div className="flex flex-col py-10 justify-evenly h-fit sm:h-screen w-10/12  mx-auto">
         <div className="flex flex-row justify-between items-center gap-7">
-          <h4 className="my-8 text-2xl sm:text-4xl md:text-6xl flex ml-16 w-fit h-fit border-r-8 border-black border-b-8 pr-1 drop-shadow-xl skew-x-2 text-beige-background">À propos</h4>
+          <h4 className="my-8 text-2xl sm:text-4xl md:text-6xl flex ml-16 w-fit h-fit border-r-8 border-black border-b-8 pr-1 drop-shadow-xl skew-x-2 text-white">À propos</h4>
           <img src={profilePic} className="rounded-full w-4/12 lg:h-96 lg:w-96" alt="" />
         </div>
 
-        <p className="leading-relaxed px-8 sm:text-xl md:text-2xl sm:w-2/3 text-left text-beige-background">
+        <p className="leading-relaxed px-8 sm:text-xl md:text-2xl sm:w-2/3 text-left text-white">
           Je crée des applications
           dynamiques et responsives avec
           React.js

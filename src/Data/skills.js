@@ -1,14 +1,14 @@
-import github from "../assets/icons/github/github-mark.png";
+import github from "../assets/icons/github/github-mark.svg";
 import gitlab from "../assets/icons/gitlab.jpg";
-import html from "../assets/icons/html.png";
-import css from "../assets/icons/css.png";
+import html from "../assets/icons/html.webp";
+import css from "../assets/icons/css.webp";
 import jest from "../assets/icons/jest/jest3.png";
 import eslint from "../assets/icons/eslint/eslint.png";
 import babel from "../assets/icons/babel.png";
 import vue from "../assets/icons/vuejs/vue-max.png";
 import vite from "../assets/icons/vite2.png";
-import js from "../assets/icons/js.png";
-import node from "../assets/icons/nodejs.png";
+import js from "../assets/icons/js.webp";
+import node from "../assets/icons/nodejs.webp";
 import react from "../assets/icons/react2.png";
 import mongo from "../assets/icons/mongodb.png";
 import mysql from "../assets/icons/mysql-img.png";
@@ -17,7 +17,7 @@ import webpack from "../assets/icons/webpack/webpack-max.png";
 import nextjs from "../assets/icons/nextjs/nextjs-max.png";
 import postgresql from "../assets/icons/postgresql/postgresql-max.png";
 import python from "../assets/icons/python/python-max.png";
-import express from "../assets/icons/expressjs.png"
+import express from "../assets/icons/expressjs.webp"
 
 // masteredToolstemplate = {
 //    name: "",

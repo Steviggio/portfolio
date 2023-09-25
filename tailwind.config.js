@@ -12,7 +12,7 @@ export default {
         "dark-grey": "#323232",
         "brown-bg": "#ad8a62",
         "light-blue": "#EFFAFD",
-        "royal-blue": "#669bbc",
+        "royal-blue": "#254355",
         "light-green": "#a3b18a",
         "footer-blue": "#2c7da0",
         "eggplant": "#A0006D",

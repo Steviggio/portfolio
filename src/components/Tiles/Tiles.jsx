@@ -10,7 +10,7 @@ const Tiles = ({datas}) => {
           <h5 className='underline text-xl'>Langages utilisés</h5>
           <ul className='flex gap-10 justify-center m-3'>{datas.map((item) => {
             return (
-              <li key={item.key}><img className='w-20' src={item.iconUrl} /></li>
+              <li key={item.key}><img className='w-20' src={item.iconUrl} alt={`${item.name} logo`} /></li>
             )
           })}</ul>
         </div>
