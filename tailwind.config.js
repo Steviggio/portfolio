@@ -2,6 +2,8 @@
 
 
 export default {
+  mode: "jit",
+  purge: ["./src/**/*.jsx"],
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
