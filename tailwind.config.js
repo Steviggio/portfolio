@@ -1,12 +1,13 @@
 /** @type {import('tailwindcss').Config} */
-
+// const plugin = require("tailwindcss/plugin")
 
 export default {
   mode: "jit",
-  purge: ["./src/**/*.jsx"],
+  blocklist: [":", ":before", ":after", "::backdrop", "*"], // Sélecteurs à exclure de la purge
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.jsx",
   ],
   theme: {
     extend: {
@@ -30,6 +31,6 @@ export default {
       }
     },
   },
-  plugins: [],
+
 }
 
