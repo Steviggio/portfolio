@@ -2,7 +2,7 @@ import mvgHome from '../../assets/projects/mvg-home.webp';
 import kasaHome2 from "../../assets/projects/kasa.webp";
 import bookiImg from "../../assets/projects/booki.webp";
 import { kasaIcons, bookiIcons, mvgIcons, iconsList } from '../../Data/icons';
-import Hover from '../../components/Hover/Hover';
+import Hover from '../Hover/Hover';
 import React from "react";
 
 
