@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const Tiles = ({datas}) => {
 
   return (

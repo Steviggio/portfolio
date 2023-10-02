@@ -1,15 +1,10 @@
 import { projectInfos } from "../../Data/projects";
 import React from "react";
+import { getProjectInfoByName } from "../../function/getProjectInfo";
 
-
-const projectsByName = {};
-projectInfos.forEach((project) => {
-  projectsByName[project.name] = project;
-});
 
 const Hover = ({ name }) => {
-  const projectName = name;
-  const projectInfo = projectsByName[projectName]; 
+  const projectInfo = getProjectInfoByName(projectInfos, name);
 
   if (!projectInfo) {
     return <div>Projet non trouvé</div>;
