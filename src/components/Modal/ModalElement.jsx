@@ -4,7 +4,7 @@ import Modal from 'react-modal';
 
 const customStyles = {
   content: {
-    top: '20%',
+    top: '50%',
     left: '50%',
     right: 'auto',
     bottom: 'auto',
@@ -49,7 +49,16 @@ const ModalElement = () => {
             <button onClick={closeModal} className='font-bold border-2 p-2 rounded-xl hover:bg-slate-300'>close</button>
             <h2 className=''>Bonsoir</h2></div>
           <div className='flex flex-col w-full'>
-            <p>Voici la div</p>
+            <p className='text-center'>Voici la div</p>
+            <div className='flex flex-row gap-10'>
+              {/* Image du projet à gauche et description à droite */}
+              <div className='border-4 w-full h-96'>Il va y avoir des photos ici
+              </div>
+              <div className='border-4 w-full h-96'>
+                <h3 className='font-bold text-lg pl-3 pt-3'>Description:</h3>
+                <p className='pl-3 pt-3'>Voici la description du projet</p>
+              </div>
+            </div>
           </div>
 
         </section>
