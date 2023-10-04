@@ -1,71 +1,80 @@
 import React from 'react';
 import Modal from 'react-modal';
 import BookiHome from "../../assets/projects/Booki.png"
+import KasaHome from "../../assets/project-modal/Kasa-homepage2.jpg"
+import KasaAbout from "../../assets/project-modal/kasa-about.png"
+import KasaFlat from "../../assets/project-modal/Kasa-flat-desc.png"
+import MvgHome from "../../assets/project-modal/MVG-homepage2.png"
+import MvgBook from "../../assets/project-modal/MVG-bookpage2.png"
 
-
-const customStyles = {
-  content: {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
-    width: "1000px",
-  },
-};
+// const customStyles = {
+//   content: {
+//     top: '50%',
+//     left: '50%',
+//     right: 'auto',
+//     bottom: 'auto',
+//     marginRight: '-50%',
+//     transform: 'translate(-50%, -50%)',
+//     width: "auto",
+//   },
+// };
 
 // Make sure to bind modal to your appElement (https://reactcommunity.org/react-modal/accessibility/)
 
 
 const ModalElement = () => {
-  let subtitle;
-  const [modalIsOpen, setIsOpen] = React.useState(false);
+  // const [modalIsOpen, setIsOpen] = React.useState(false);
 
-  function openModal() {
-    setIsOpen(true);
-  }
+  // function openModal() {
+  //   setIsOpen(true);
+  // }
 
-  function afterOpenModal() {
-    // references are now sync'd and can be accessed.
-    subtitle.style.color = '#f00';
-  }
 
-  function closeModal() {
-    setIsOpen(false);
-  }
+  // function closeModal() {
+  //   setIsOpen(false);
+  // }
 
   return (
-    <div>
-      <button onClick={openModal}>Open Modal</button>
-      <Modal
-        isOpen={modalIsOpen}
-        onAfterOpen={afterOpenModal}
-        onRequestClose={closeModal}
-        style={customStyles}
-        contentLabel="Example Modal"
-      >
-        <section className='h-fit w-full'>
-          <div className='flex justify-between items-center'>
-            <button onClick={closeModal} className='font-bold border-2 p-2 rounded-xl hover:bg-slate-300'>close</button>
-            <h2 className=''>Bonsoir</h2></div>
-          <div className='flex flex-col w-full'>
-            <p className='text-center mb-3 text-2xl'>Projet : Booki </p>
-            <div className='flex flex-row gap-10'>
-              {/* Image du projet à gauche et description à droite */}
-              <div className='border-4 w-full h-96'>
-                <img src={BookiHome} alt="" />
-              </div>
-              <div className='border-4 w-full h-96'>
-                <h3 className='font-bold text-lg pl-3 pt-3'>Description:</h3>
-                <p className='pl-3 pt-3'>Voici la description du projet</p>
-              </div>
+    <>
+      <button data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+        Toggle modal
+      </button>
+
+      {/* <!-- Main modal --> */}
+      <div id="defaultModal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative w-full max-w-2xl max-h-full">
+          {/* <!-- Modal content --> */}
+          <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            {/* <!-- Modal header --> */}
+            <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                Terms of Service
+              </h3>
+              <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="defaultModal">
+                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                </svg>
+                <span class="sr-only">Close modal</span>
+              </button>
+            </div>
+            {/* <!-- Modal body --> */}
+            <div class="p-6 space-y-6">
+              <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.
+              </p>
+              <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them.
+              </p>
+            </div>
+            {/* <!-- Modal footer --> */}
+            <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+              <button data-modal-hide="defaultModal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">I accept</button>
+              <button data-modal-hide="defaultModal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Decline</button>
             </div>
           </div>
-
-        </section>
-      </Modal>
-    </div>
+        </div>
+      </div>
+    </>
   );
 }
 

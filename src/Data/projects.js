@@ -57,8 +57,8 @@ const projectInfos = [{
   usedLanguages: ["HTML", "CSS", "JavaScript"],
   role: "Frontend developper",
   usedFrameworks: [],
-  description: "",
-  tasks: ["Débogage d'une application web.", "Optimisation des performances.", "Optimisation du SEO."]
+  description: "Optimiser le SEO ainsi que les performances de l'application web et améliorer son accessibilité.",
+  tasks: ["Débogage d'une application web.", "Optimisation des performances.", "Optimisation du SEO.", "Mise en place d'un référencement local", "Mise en place de metas tags", "Rapport d'intervention recensant les optimisations effectuées"]
 }
 ]
 

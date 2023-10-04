@@ -2,12 +2,16 @@
 // const plugin = require("tailwindcss/plugin")
 
 export default {
+  plugins: [
+    require('flowbite/plugin')
+  ],
   mode: "jit",
   blocklist: [":", ":before", ":after", "::backdrop", "*"], // Sélecteurs à exclure de la purge
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
     "./src/components/**/*.jsx",
+    "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
     extend: {
