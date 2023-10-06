@@ -15,6 +15,9 @@ export default {
   ],
   theme: {
     extend: {
+      boxShadow: {
+
+      },
       colors: {
         "dark-grey": "#323232",
         "brown-bg": "#ad8a62",

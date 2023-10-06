@@ -49,3 +49,21 @@
 
 
 ### Custom Styles
+
+  Custom your scrollbar style :
+
+  To customise your scrollbar style, you need to put the style in your index.css and use these classes to personalize the aspect of the different elements composing the scrollbar :
+
+    ```css
+    ::-webkit-scrollbar {
+
+    }
+
+    ::-webkit-scrollbar-thumb {
+
+    }
+
+    ::-webkit-scrollbar-track {
+
+    }
+    ```
