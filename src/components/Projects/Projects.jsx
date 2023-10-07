@@ -4,10 +4,23 @@ import bookiImg from "../../assets/projects/booki.webp";
 import { kasaIcons, bookiIcons, mvgIcons, iconsList } from '../../Data/icons';
 import Hover from '../Hover/Hover';
 import React from "react";
+import BasicModal from '../Modal/ModalElement';
+import { useState } from 'react';
 
 
 
 const Projects = () => {
+  
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const handleProjectClick = (projectName) => {
+    setSelectedProject(projectName);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedProject(null); // Close the modal
+  };
+
   const booki = bookiIcons;
   const kasa = kasaIcons;
   const mvg = mvgIcons;
@@ -21,7 +34,9 @@ const Projects = () => {
       <div className="flex-col lg:flex-row flex-wrap md:w-fit justify-center flex pt-6 gap-10 h-fit px-8">
 
         {/* Tiles list */}
-        <div className="flex relative flex-col lg:w-4/12 xl:w-3/12 gap-6 items-center p-5 bg-light-blue rounded-xl shadow-md h-fit">
+
+        {/* Booki project */}
+        <div onClick={() => handleProjectClick("Booki")} className="flex relative flex-col lg:w-4/12 xl:w-3/12 gap-6 items-center p-5 bg-light-blue rounded-xl shadow-md h-fit">
           <figure className='relative'>
             <img className="h-80 w-full rounded-xl shadow-sm" src={bookiImg} alt="" />
             <figcaption className='absolute bg-black bg-opacity-60 top-0 text-white flex justify-center items-center w-full h-full rounded-xl opacity-0 hover:opacity-100'>
@@ -55,8 +70,8 @@ const Projects = () => {
           <p>Lien vers le Github : <a className='font-bold' target='_blank' href="https://github.com/Steviggio/Booki">Booki</a></p>
         </div>
 
-
-        <div className="flex relative flex-col items-center lg:w-4/12 xl:w-3/12 gap-6 p-5 bg-light-blue rounded-xl shadow-md h-fit">
+        {/* Kasa Project */}
+        <div onClick={() => handleProjectClick("Kasa")} className="flex relative flex-col items-center lg:w-4/12 xl:w-3/12 gap-6 p-5 bg-light-blue rounded-xl shadow-md h-fit">
           <figure className='relative'>
             <img className="h-80 w-full object-cover rounded-xl" src={kasaHome2} alt="Kasa homepage" />
             <figcaption className='text-white absolute bg-black bg-opacity-60 top-0 flex justify-center items-center w-full h-full rounded-xl opacity-0 hover:opacity-100'>
@@ -93,8 +108,8 @@ const Projects = () => {
           <p>Lien vers le Github : <a className='font-bold' target='_blank' href="https://github.com/Steviggio/Kasa">Kasa</a></p>
         </div>
 
-
-        <div className=" flex relative flex-col lg:w-4/12 xl:w-3/12 gap-6 items-center  p-5 bg-light-blue rounded-xl shadow-md h-fit">
+        {/* MVG project */}
+        <div onClick={() => handleProjectClick("Mon Vieux Grimoire")} className=" flex relative flex-col lg:w-4/12 xl:w-3/12 gap-6 items-center  p-5 bg-light-blue rounded-xl shadow-md h-fit">
           <figure className='relative'>
             <img className="h-80 w-full object-contain rounded-xl" src={mvgHome} alt="MVG homepage" />
             <figcaption className='absolute bg-black bg-opacity-60 top-0 text-white flex justify-center items-center w-full h-full rounded-xl opacity-0 hover:opacity-100'>
@@ -134,6 +149,10 @@ const Projects = () => {
           <p>Lien vers le Github : <a className='font-bold' target='_blank' href="https://github.com/Steviggio/MVG_backend">Mon vieux Grimoire</a></p>
         </div>
 
+        {/* Render the selected project modal */}
+        {selectedProject && (
+          <BasicModal name={selectedProject} handleClose={handleCloseModal} />
+        )}
       </div>
     </section>
   )

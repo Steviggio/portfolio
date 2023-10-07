@@ -1,9 +1,10 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
-
+import { getProjectInfoByName } from '../../function/getProjectInfo';
+import { projectInfos } from '../../Data/projects';
+import { useEffect } from 'react';
 
 
 
@@ -24,22 +25,31 @@ const style = {
   p: 4,
 };
 
-export default function BasicModal({ data }) {
+export default function BasicModal({ name }) {
+  const projectInfo = getProjectInfoByName(projectInfos, name)
 
-  const title = data.title;
-  const description = data.description;
-  var imgs = [];
-  if (data.imgs) {
-    imgs = data.imgs
+  // const title = name.title;
+  // const description = name.description;
+  // var imgs = [];
+  // if (name.imgs) {
+  //   imgs = name.imgs
+  // }
+
+  if (!projectInfo) {
+    return <div>Aucune info n'a été trouvé !</div>
   }
 
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
+  useEffect(() => {
+    // Open the modal when the component mounts
+    handleOpen();
+  }, []); // Empty dependency array means this effect runs only once, when the component mounts
+
   return (
     <div>
-      <Button onClick={handleOpen}>Open modal</Button>
       <Modal
         open={open}
         onClose={handleClose}
@@ -53,20 +63,21 @@ export default function BasicModal({ data }) {
               <div className='flex'>
                 {/* Img container */}
 
-                <div className='w-full flex-grow border-4 max-h-fit mx-1'>
-                  <img src={MVGHome} className='object-contain w-full' alt="" />
+                <div className='w-full flex-grow max-h-fit mx-1'>
+                  <img src={projectInfo.img[0]} className='object-contain w-full' alt="" />
                 </div>
                 {/* Info container  */}
-                <div className='w-full flex-grow border-4 max-h-[500px] mx-1 p-4'>
+                <div className='w-full flex-grow max-h-[500px] mx-1 p-4'>
                   <div className='flex flex-col gap-2'>
-                    <h4 className='text-2xl font-bold'>Back-end du site {title}</h4>
+                    <h4 className='text-2xl font-bold'>Back-end du site {projectInfo.name}</h4>
                     <p className='mt-2'>
-                      {description}
-                      Voici la description du projet
+                      {projectInfo.description}
                     </p>
                     <ul>
                       Voici la liste de tâches effectuées :
-                      <li>Voici un élément</li>
+                      {projectInfo.tasks.map((task, index) => {
+                        <li key={index}>{task}</li>
+                      })}
                     </ul>
                   </div>
                 </div>
@@ -75,13 +86,13 @@ export default function BasicModal({ data }) {
               <div className='relative flex flex-wrap'>
                 {/* A div for each extra img */}
                 <div className='basis-1/2 grid-box w-[calc(50%-10px)] mb-2'>
-                  <img src={imgs[0]} className='grid-item' alt="" />
+                  <img src={projectInfo.img[1]} className='grid-item' alt="" />
                 </div>
                 <div className='basis-1/2'>
-                  <img src={imgs[1]} className='w-full border-4 flex-grow max-h-[550px]' alt="" />
+                  <img src={projectInfo.img[2]} className='w-full  flex-grow max-h-[550px]' alt="" />
                 </div>
                 <div className='basis-1/2'>
-                  <img src={imgs[2]} className='w-full border-4 flex-grow max-h-[550px]' alt="" />
+                  <img src={projectInfo.img[3]} className='w-full  flex-grow max-h-[550px]' alt="" />
                 </div>
 
               </div>

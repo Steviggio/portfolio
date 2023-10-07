@@ -13,7 +13,6 @@ const router = createBrowserRouter(
     <>
       <Route path="/portfolio" element={<App />} />
       <Route path="/portfolio/project-page" element={<ProjectPage project="Kasa" />} />
-      <Route path="/portfolio/modal" element={<ModalElement />} />
     </>
   ))
 

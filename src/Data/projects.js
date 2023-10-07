@@ -45,7 +45,7 @@ const projectInfos = [{
   usedFrameworks: [],
   description: "Développer l'interface web d'une entreprise souhaitant promouvoir les activités et les hébergement disponibles dans la ville de leur choix.",
   tasks: ["Inplémentation d'une interface responsive.", "Intégration d'une maquette en HTML/CSS."],
-
+  img: []
 },
 {
   name: "Kasa",
