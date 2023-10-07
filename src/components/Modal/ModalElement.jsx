@@ -65,17 +65,18 @@ export default function BasicModal({ title, description }) {
                 </div>
               </div>
               {/* Container for extra imgs */}
-              <div className=''>
+              <div className='relative flex flex-wrap'>
                 {/* A div for each extra img */}
-                <div className='absolute grid-box w-[calc(50%-10px)] mb-2'>
+                <div className='basis-1/2 grid-box w-[calc(50%-10px)] mb-2'>
                   <img src={MVGAddBook} className='grid-item' alt="" />
                 </div>
-                <div>
-                  <img src="" className='border-4 flex-grow' alt="" />
+                <div className='basis-1/2'>
+                  <img src={MVGAddBook} className='w-full border-4 flex-grow max-h-[550px]' alt="" />
                 </div>
-                <div>
-                  <img src="" className='border-4 flex-grow' alt="" />
+                <div className='basis-1/2'>
+                  <img src={MVGHome} className='w-full border-4 flex-grow max-h-[550px]' alt="" />
                 </div>
+
               </div>
             </div>
           </section>
