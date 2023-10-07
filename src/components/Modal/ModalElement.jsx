@@ -3,8 +3,7 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
-import MVGHome from "../../assets/project-modal/MVG-homepage3.png"
-import MVGAddBook from "../../assets/project-modal/MVG-addbook.png"
+
 
 
 
@@ -25,7 +24,15 @@ const style = {
   p: 4,
 };
 
-export default function BasicModal({ title, description }) {
+export default function BasicModal({ data }) {
+
+  const title = data.title;
+  const description = data.description;
+  var imgs = [];
+  if (data.imgs) {
+    imgs = data.imgs
+  }
+
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -68,13 +75,13 @@ export default function BasicModal({ title, description }) {
               <div className='relative flex flex-wrap'>
                 {/* A div for each extra img */}
                 <div className='basis-1/2 grid-box w-[calc(50%-10px)] mb-2'>
-                  <img src={MVGAddBook} className='grid-item' alt="" />
+                  <img src={imgs[0]} className='grid-item' alt="" />
                 </div>
                 <div className='basis-1/2'>
-                  <img src={MVGAddBook} className='w-full border-4 flex-grow max-h-[550px]' alt="" />
+                  <img src={imgs[1]} className='w-full border-4 flex-grow max-h-[550px]' alt="" />
                 </div>
                 <div className='basis-1/2'>
-                  <img src={MVGHome} className='w-full border-4 flex-grow max-h-[550px]' alt="" />
+                  <img src={imgs[2]} className='w-full border-4 flex-grow max-h-[550px]' alt="" />
                 </div>
 
               </div>
