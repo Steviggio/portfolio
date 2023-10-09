@@ -1,10 +1,10 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
 import { getProjectInfoByName } from '../../function/getProjectInfo';
 import { projectInfos } from '../../Data/projects';
 import { useEffect } from 'react';
+import { useState } from 'react';
 
 
 
@@ -39,26 +39,45 @@ export default function BasicModal({ name }) {
     return <div>Aucune info n'a été trouvé !</div>
   }
 
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  const [modalIsOpen, setModal] = useState(false);
+
+  const openModal = () => {
+    setModal(true)
+  }
+
+  const closeModal = () => {
+    setModal(false)
+    handleClose();
+  }
 
   useEffect(() => {
     // Open the modal when the component mounts
-    handleOpen();
-  }, []); // Empty dependency array means this effect runs only once, when the component mounts
+    openModal();
+  }, []);
+
+  useEffect(() => {
+    const handleClose = () => {
+      closeModal();
+    }
+
+    return () => {
+      handleClose();
+    }, []
+  })
+  // Empty dependency array means this effect runs only once, when the component mounts
 
   return (
     <div>
       <Modal
-        open={open}
-        onClose={handleClose}
+        open={modalIsOpen}
+        onClose={closeModal}
+        shouldCloseOnOverlayClick={true}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
         <Box sx={style} id="scroll-bar">
           <section className='flex overflow-auto relative h-full'>
-            <button className='font-bold absolute' onClick={handleClose}>Close</button>
+            <button className='font-bold absolute' onClick={closeModal}>Close</button>
             <div className='flex flex-col w-full mt-7 gap-3'>
               <div className='flex'>
                 {/* Img container */}
