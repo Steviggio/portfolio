@@ -36,7 +36,7 @@ const projectInfos = [{
   usedFrameworks: ["Express.js", "React.js"],
   description: "Développer une API Restful pour une librairie souhaitant ouvrir un site de référencement et de notation de livre.",
   tasks: ["Création d'une API REST.", "Configuration d'un système d'authentification.", "Stockage et sécurisation de données.", "Implémentation sécurisée de requêtes CRUD."],
-  img: [MVGHome, MVGSignIn, MVGAddBook, MVGBookPage ]
+  img: [MVGHome, MVGAddBook, MVGBookPage, MVGSignIn ]
 },
 {
   name: "Booki",

@@ -50,7 +50,7 @@ const ModalContent = ({ name, onClose }) => {
                   <img src={projectInfo.img[0]} className='object-contain w-full' alt="" />
                 </div>
                 {/* Info container  */}
-                <div className='w-full flex-grow max-h-[500px] mx-1 p-4'>
+                <div className='w-full flex-grow max-h-[500px] h-fit mx-1 p-4'>
                   <div className='flex flex-col gap-2'>
                     <h4 className='text-2xl font-bold'>Back-end du site {projectInfo.name}</h4>
                     <p className='mt-2'>
@@ -66,15 +66,15 @@ const ModalContent = ({ name, onClose }) => {
                 </div>
               </div>
               {/* Container for extra imgs */}
-              <div className='relative flex flex-wrap'>
+              <div className='relative flex flex-wrap gap-2'>
                 {/* A div for each extra img */}
-                <div className='basis-1/2 grid-box w-[calc(50%-10px)] mb-2'>
-                  <img src={projectInfo.img[1]} className='grid-item' alt="" />
+                <div className='basis-auto grid-box w-[calc(50%-10px)] mb-2'>
+                  <img src={projectInfo.img[1]} className='grid-item ' alt="" />
                 </div>
-                <div className='basis-1/2'>
-                  <img src={projectInfo.img[2]} className='w-full  flex-grow max-h-[550px]' alt="" />
+                <div className='basis-auto'>
+                  <img src={projectInfo.img[2]} className='w-full  flex-grow max-h-[550px] max-w-[570px]' alt="" />
                 </div>
-                <div className='basis-1/2'>
+                <div className='basis-auto'>
                   <img src={projectInfo.img[3]} className='w-full  flex-grow max-h-[550px]' alt="" />
                 </div>
 
