@@ -4,21 +4,25 @@ import bookiImg from "../../assets/projects/booki.webp";
 import { kasaIcons, bookiIcons, mvgIcons, iconsList } from '../../Data/icons';
 import Hover from '../Hover/Hover';
 import React from "react";
-import BasicModal from '../Modal/ModalElement';
 import { useState } from 'react';
+import ModalContent from '../Modal/ModalContent';
+import { createPortal } from 'react-dom';
 
 
 
 const Projects = () => {
-  
+
+  const [showModal, setShowModal] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
 
   const handleProjectClick = (projectName) => {
     setSelectedProject(projectName);
+    setShowModal(true);
   };
 
   const handleCloseModal = () => {
-    setSelectedProject(null); // Close the modal
+    setSelectedProject(null);
+    setShowModal(false);
   };
 
   const booki = bookiIcons;
@@ -149,9 +153,18 @@ const Projects = () => {
           <p>Lien vers le Github : <a className='font-bold' target='_blank' href="https://github.com/Steviggio/MVG_backend">Mon vieux Grimoire</a></p>
         </div>
 
-        {/* Render the selected project modal */}
+
         {selectedProject && (
-          <BasicModal name={selectedProject} handleClose={handleCloseModal} />
+          <button onClick={handleCloseModal}>Close</button>
+        )}
+        {showModal && (
+          <div className="modal-background">
+            <ModalContent
+              name={selectedProject}
+              open={showModal}
+              onClose={handleCloseModal}
+            />
+          </div>
         )}
       </div>
     </section>

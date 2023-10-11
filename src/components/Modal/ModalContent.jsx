@@ -1,14 +1,10 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Modal from '@mui/material/Modal';
+import React, { useState } from "react";
+import { Box, Modal } from "@mui/material"
 import { getProjectInfoByName } from '../../function/getProjectInfo';
 import { projectInfos } from '../../Data/projects';
-import { useEffect } from 'react';
-import { useState } from 'react';
+import { useAsyncError } from "react-router-dom";
 
 
-
-// Modal style 
 const style = {
   position: 'absolute',
   top: '50%',
@@ -25,59 +21,27 @@ const style = {
   p: 4,
 };
 
-export default function BasicModal({ name }) {
+{/* Render the selected project modal
+        {selectedProject && createPortal(
+          <ModalContent name={selectedProject} onclose={closeModal & handleCloseModal} />,
+          document.body
+        )} */}
+
+
+const ModalContent = ({ name, onClose }) => {
+  const [open, setOpen] = useState(true)
+
   const projectInfo = getProjectInfoByName(projectInfos, name)
 
-  // const title = name.title;
-  // const description = name.description;
-  // var imgs = [];
-  // if (name.imgs) {
-  //   imgs = name.imgs
-  // }
-
-  if (!projectInfo) {
-    return <div>Aucune info n'a été trouvé !</div>
-  }
-
-  const [modalIsOpen, setModal] = useState(false);
-
-  const openModal = () => {
-    setModal(true)
-  }
-
-  const closeModal = () => {
-    setModal(false)
-    handleClose();
-  }
-
-  useEffect(() => {
-    // Open the modal when the component mounts
-    openModal();
-  }, []);
-
-  useEffect(() => {
-    const handleClose = () => {
-      closeModal();
-    }
-
-    return () => {
-      handleClose();
-    }, []
-  })
-  // Empty dependency array means this effect runs only once, when the component mounts
-
   return (
-    <div>
+    <>
       <Modal
-        open={modalIsOpen}
-        onClose={closeModal}
-        shouldCloseOnOverlayClick={true}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
+        open={open}
+        onClose={onClose}
       >
         <Box sx={style} id="scroll-bar">
           <section className='flex overflow-auto relative h-full'>
-            <button className='font-bold absolute' onClick={closeModal}>Close</button>
+            <button className='font-bold absolute' onClick={onClose}>Close</button>
             <div className='flex flex-col w-full mt-7 gap-3'>
               <div className='flex'>
                 {/* Img container */}
@@ -119,6 +83,8 @@ export default function BasicModal({ name }) {
           </section>
         </Box>
       </Modal>
-    </div>
-  );
+    </>
+  )
 }
+
+export default ModalContent;

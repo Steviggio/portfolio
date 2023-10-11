@@ -4,7 +4,7 @@ import App from './App.jsx'
 import './index.css'
 import ProjectPage from "./pages/ProjectPage/ProjectPage.jsx"
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
-import ModalElement from './components/Modal/ModalElement.jsx'
+import ModalContent from './components/Modal/ModalContent.jsx'
 
 
 
@@ -13,6 +13,7 @@ const router = createBrowserRouter(
     <>
       <Route path="/portfolio" element={<App />} />
       <Route path="/portfolio/project-page" element={<ProjectPage project="Kasa" />} />
+      <Route path="/portfolio/modal" element={<ModalContent name={"Mon Vieux Grimoire"}/>} />
     </>
   ))
 
