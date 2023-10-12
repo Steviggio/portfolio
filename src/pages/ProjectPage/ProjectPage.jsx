@@ -1,38 +1,70 @@
+import { kasaIcons, bookiIcons, mvgIcons, iconsList } from "../../Data/icons";
+import Hover from '../../components/Hover/Hover';
 import React from "react";
-import Tiles from "../../components/Tiles/Tiles";
-import { projectInfos } from "../../Data/projects"
-import { getProjectInfoByName } from "../../function/getProjectInfo";
-import Modal from "react-modal";
-
-const ProjectPage = ({ project }) => {
+import { useState } from 'react';
+import ModalContent from '../../components/Modal/ModalContent';
+import { createPortal } from 'react-dom';
+import ProjectElement from '../../components/Projects/ProjectElement';
 
 
-  // const projectDatas = getProjectInfoByName(projectInfos, project)
 
-  // if (!projectDatas) {
-  //   return <div>Projet non trouvé</div>
-  // }
+const ProjectPage = () => {
+
+
+  const [showModal, setShowModal] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const handleProjectClick = (projectName) => {
+    setSelectedProject(projectName);
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedProject(null);
+    setShowModal(false);
+  };
+
+  const booki = bookiIcons;
+  const kasa = kasaIcons;
+  const mvg = mvgIcons;
 
   return (
-    <>
-      {/* Header needs to be a component to generate a personnalized entitlement for each project */}
-      <header className="flex m-5 w-1/2 justify-between items-center">
-        <span className="text-2xl border-2 px-2 pb-2 rounded-lg cursor-pointer" >
-          &#x2190;
-        </span>
-        {/* Specific title */}
-        <h1 className="font-bold text-xl ">Voici la project page</h1>
-      </header>
-      <main>
-        <section>
-        
-        </section>
-      </main>
+    // Section containing project tiles
+    <section id="projects-section" className="bg-white lg:h-fit flex flex-col justify-center my-10">
 
-      <footer>
+      <h3 className='text-5xl mb-10 underline'>Mes projets</h3>
+      {/* Tiles Container */}
+      <div className="flex-col lg:flex-row flex-wrap md:w-fit justify-center flex pt-6 gap-10 h-fit px-8">
 
-      </footer>
-    </>
+        {/* Tiles list */}
+
+        {/* Booki project */}
+        <ProjectElement onClick={() => handleProjectClick("Booki")} project={"Booki"} icons={booki} />
+
+
+
+// Dans le composant ProjectPage
+        {selectedProject && (
+          <div className="modal-background">
+            <ModalContent
+              name={selectedProject}
+              open={showModal}
+              onClose={handleCloseModal}
+            />
+          </div>
+        )}
+
+        {showModal && (
+          <div className="modal-background">
+            <ModalContent
+              name={selectedProject}
+              open={showModal}
+              onClose={handleCloseModal}
+            />
+          </div>
+        )}
+      </div>
+    </section>
   )
 }
 

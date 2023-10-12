@@ -54,12 +54,12 @@ const ModalContent = ({ name, onClose }) => {
                   <div className='flex flex-col gap-2'>
                     <h4 className='text-2xl font-bold'>Back-end du site {projectInfo.name}</h4>
                     <p className='mt-2'>
-                      {projectInfo.description}
+                      Mission : <span className="text-lg underline underline-offset-2">{projectInfo.description}</span>
                     </p>
-                    <ul>
-                      Voici la liste de tâches effectuées :
+                    <ul className="my-5 flex flex-col gap-2">
+                      Les tâches que j'ai effectuées :
                       {projectInfo.tasks.map((task, index) => {
-                        <li key={index}>{task}</li>
+                        return <li key={index}>- {task}</li>
                       })}
                     </ul>
                   </div>
