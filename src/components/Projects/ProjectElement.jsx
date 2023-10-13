@@ -3,14 +3,17 @@ import { getProjectInfoByName } from "../../function/getProjectInfo";
 import { projectInfos } from "../../Data/projects";
 import Hover from "../Hover/Hover";
 
+
+
 const ProjectElement = ({ project, icons, open }) => {
   const projectInfo = getProjectInfoByName(projectInfos, project)
+
 
   return (
     <>
       <div onClick={open} className="cursor-pointer flex relative flex-col lg:w-4/12 xl:w-3/12 gap-6 items-center p-5 bg-light-blue rounded-xl shadow-md h-fit">
         <figure className='relative'>
-          <img className="h-80 object-cover w-full rounded-xl shadow-sm" src={projectInfo.mainImg} alt={`Landing page of ${project.name}`} />
+          <img className="h-[290px] w-[380px] object-cover rounded-xl shadow-sm" src={projectInfo.mainImg} alt={`Homepage of ${project.name}`} />
           <figcaption className='absolute bg-black bg-opacity-60 top-0 text-white flex justify-center items-center w-full h-full rounded-xl opacity-0 hover:opacity-100'>
             <div className='relative top-0 left-0'>
               <Hover name={projectInfo.name} />
@@ -28,8 +31,6 @@ const ProjectElement = ({ project, icons, open }) => {
               {projectInfo.issues.map((item, index) => {
                 return <li key={index} className='pl-3 text-sm'>- {item}</li>
               })}
-              {/* <li className='pl-3 text-sm'>- Découpage de la maquette pour effectuer l'intégration</li> */}
-              {/* <li className='pl-3 text-sm'>- Intégration des éléments pour les différents formats</li> */}
             </ul>
           </div>
           <div className='bg-white rounded-lg my-3 py-3 px-2'>

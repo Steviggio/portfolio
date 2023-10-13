@@ -8,6 +8,7 @@ import KasaFlat from "../assets/project-modal/Kasa/kasa-flatpage2.png";
 import KasaAbout from "../assets/project-modal/Kasa/kasa-about2.png";
 import BookiImg from "../assets/projects/booki.webp"
 import Kasa from "../assets/project-modal/Kasa/Kasa-home.webp"
+import KasaTablet from "../assets/project-modal/Kasa/Kasa-tablet.webp"
 import mvgHome from "../assets/projects/mvg-home.webp"
 import BookiPCTop from "../assets/project-modal/Booki/pc-top.webp"
 import BookiPCBottom from "../assets/project-modal/Booki/pc-bottom.png"
@@ -58,8 +59,8 @@ const projectInfos = [{
   usedFrameworks: [],
   description: "Développer l'interface web d'une start-up promouvant des activités et lieux touristiques.",
   tasks: ["Inplémenter une interface responsive.", "Intégrer une maquette en HTML/CSS." , "Découper le contenu d'une maquette Figma."],
-  img: [BookiPCTop, BookiTabletTop, BookiTabletBottom],
-  issues: ["Découpage de la maquette pour effectuer l'intégration.", "Intégration des éléments pour les différents formats.", "" ],
+  img: [BookiPCTop, BookiTabletTop, BookiTabletBottom, BookiPCBottom],
+  issues: ["Découpage de la maquette pour effectuer l'intégration.", "Intégration des éléments pour les différents formats."],
   solutions: ["Identification des différentes parties d'une maquette.", "Implémentation de breakpoints et utilisation de media queries pour l'aspect responsive."], 
   problematic: "Intégration d'une maquette en HTML/CSS pour un site de de réservation de logement.",
   mainImg: BookiPCTop,
@@ -72,7 +73,7 @@ const projectInfos = [{
   usedFrameworks: ["React"],
   description: "Développer une application complète en React en suivant les maquettes Figma fournies.",
   tasks: ["Créer une application web avec React.js.", "Créer des composants indépendants.", "Assurer le bon fonctionnement de l'application en implémentant des tests unitaires.", "Configurer le routing de l'application web avec react-router.", "Développer une interface web avec Sass."],
-  img: [Kasa, KasaFlat, KasaAbout],
+  img: [Kasa,  KasaFlat, KasaAbout, KasaTablet],
   issues: ["Création de composant indépendant prenant en compte des paramètres.", "Routing de l'application.", "Intégration d'animation en CSS." ],
   solutions: ["Identifications des éléments prenant en compte des paramètres afin de les rendre réutilisables.", "Apprentissage du routing grâce à react-router.", "Développement d'une interface web en Sass."], 
   problematic: "Intégration d'une maquette en HTML/CSS pour un site de réservation de logement.",
