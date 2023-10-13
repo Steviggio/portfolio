@@ -13,9 +13,6 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/portfolio" element={<App />} />
-      <Route path="/portfolio/project-page" element={<ProjectPage />} />
-      <Route path="/portfolio/modal" element={<ModalContent name={"Mon Vieux Grimoire"}/>} />
-      <Route path="/portfolio/element" element={<ProjectElement />} />
     </>
   ))
 
