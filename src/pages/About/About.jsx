@@ -22,7 +22,7 @@ const About = () => {
         </p>
       </div>
       {/* Skills / Tools / Languages used */}
-      <div className="w-fit border-4 bg-blue-50 rounded-xl mb-14 flex flex-col">
+      <div className="m-10 border-4 bg-blue-50 rounded-xl mb-14 flex flex-col">
         <h3 className="my-3 mb-5 text-2xl">Mes compétences</h3>
         <div className="gap-2 flex flex-wrap justify-center w-fit mb-1 lg:gap-2 sm:gap-2">
           {/* Different categories of skills */}
