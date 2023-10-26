@@ -4,4 +4,8 @@ export default {
   transform: {
     '^.+\\.jsx?$': 'babel-jest',
   },
+  // Module 
+  moduleNameMapper: {
+    '\\.(jpg|jpeg|png|gif|webp|svg)$': 'identity-obj-proxy',
+  },
 };

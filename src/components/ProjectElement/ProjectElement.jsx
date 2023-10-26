@@ -11,9 +11,11 @@ const ProjectElement = ({ project, icons, open }) => {
 
   return (
     <>
-      <div onClick={open} className="cursor-pointer flex relative flex-col lg:w-4/12 xl:w-3/12 gap-6 items-center p-5 bg-light-blue rounded-xl shadow-md h-fit">
+    {/* Complete project thumbnail */}
+      <div onClick={open} className="cursor-pointer flex relative flex-col lg:w-5/12  gap-6 items-center p-5 bg-light-blue rounded-xl shadow-md h-fit">
         <figure className='relative'>
-          <img className="h-[290px] w-[380px] md:w-[600px] md:h-[400px] object-cover rounded-xl shadow-sm" src={projectInfo.mainImg} alt={`Homepage of ${project.name}`} />
+          {/* responsive behavior of the presentation img */}
+          <img className="w-full h-auto object-cover rounded-xl shadow-sm" src={projectInfo.mainImg} alt={`Homepage of ${project.name}`} />
           <figcaption className='absolute bg-black bg-opacity-60 top-0 text-white flex justify-center items-center w-full h-full rounded-xl opacity-0 hover:opacity-100'>
             <div className='relative top-0 left-0'>
               <Hover name={projectInfo.name} />
@@ -45,9 +47,10 @@ const ProjectElement = ({ project, icons, open }) => {
         <div className='h-fit w-fit flex flex-col justify-center pr-4 bg-white rounded-lg  shadow-md'>
 
           <h5 className='underline text-xl'>Langages utilisés</h5>
+          {/* Used icons List */}
           <ul className='flex gap-10 justify-center m-3'>{icons.map((item, index) => {
             return (
-              <li key={index}><img className='w-16' src={item.iconUrl} alt={`${item.name} logo`} /></li>
+              <li className="flex items-center" key={index}><img className='w-16' src={item.iconUrl} alt={`${item.name} logo`} /></li>
             )
           })}</ul>
         </div>

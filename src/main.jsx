@@ -4,13 +4,15 @@ import App from './App.jsx'
 import './index.css'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 
+
 const router = createBrowserRouter(
+
   createRoutesFromElements(
     <>
       <Route path="/portfolio" element={<App />} />
     </>
-  ))
-
+  )
+)
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
