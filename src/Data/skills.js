@@ -17,8 +17,12 @@ import webpack from "../assets/icons/webpack/webpack-max.png";
 import nextjs from "../assets/icons/nextjs/nextjs-max.png";
 import postgresql from "../assets/icons/postgresql/postgresql-max.png";
 import python from "../assets/icons/python/python-max.png";
-import express from "../assets/icons/expressjs.webp"
-
+import express from "../assets/icons/expressjs.webp";
+import typescript from "../assets/icons/Typescript/ts-logo-128.png";
+import confluence from "../assets/icons/Confluence/confluence-96.svg";
+import jira from "../assets/icons/Jira/jira-96.svg";
+import nestjs from "../assets/icons/NestJs/nestjs-96.svg"
+import tailwind from "../assets/icons/Tailwind/tailwindcss-96.png"
 // masteredToolstemplate = {
 //    name: "",
 //    icon: ""
@@ -99,6 +103,30 @@ const masteredTools = [{
 {
    name: "Express.js",
    icon: express
+},
+{
+   name: "Typescript",
+   icon: typescript
+},
+{
+   name: "Confluence",
+   icon: confluence
+},
+{
+   name: "Vite",
+   icon: vite
+},
+{
+   name: "NestJs",
+   icon: nestjs
+},
+{
+   name: "Tailwind",
+   icon: tailwind
+},
+{
+   name: "Jira",
+   icon: jira
 }
 ]
 
