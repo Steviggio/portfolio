@@ -13,8 +13,8 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: '/portfolio/project-page',
-    element: <ProjectPage name="Kasa" />
+    path: '/portfolio/project-page/:name',
+    element: <ProjectPage />
   },
   {
     path: "/portfolio/project-img",

@@ -9,9 +9,9 @@ import { getProjectInfoByName } from "../../function/getProjectInfo";
 
 const ProjectPage = () => {
 
-  // const name = useParams();
-  // const projectInfo = getProjectInfoByName(projectInfos, name)
-
+  const { name } = useParams();
+  const projectInfo = getProjectInfoByName(projectInfos, name)
+  console.log(projectInfo)
   return (
     <>
       <section className='flex flex-col'>
@@ -21,24 +21,24 @@ const ProjectPage = () => {
             <button className='font-bold' >Close</button>
           </div>
           <div>
-            <h3 className="text-2xl ">Title of the project</h3>
+            <h3 className="text-2xl ">{projectInfo.name}</h3>
           </div>
         </div>
 
         {/* Main body of the project page */}
-        <div >
+        <div className="lg:w-4/5 mx-auto">
 
           {/* Content of the associated project */}
-          <div className="lg:w-4/5 flex mx-auto">
+          <div className=" flex ">
             <div className='flex flex-col w-full mt-7 gap-3'>
               <div className='flex justify-evenly'>
                 {/* Img container */}
 
-                <div className=' max-h-fit mx-1 my-1'>
-                  <img className='h-[477px] w-[595px] modal-item object-contain ' alt={`Main image of `} />
+                <div className='grow flex justify-center max-h-fit mx-1 my-1'>
+                  <img src={projectInfo.mainImg} className='h-[477px] w-[595px] modal-item object-contain ' alt={`Main image of `} />
                 </div>
                 {/* Info container  */}
-                <div className='max-h-[500px] h-fit mx-1 p-4'>
+                <div className='grow max-h-[500px] h-fit mx-1 p-4'>
                   <div className='flex flex-col gap-2 text-left'>
                     <h4 className='text-2xl font-bold'>Back-end du site</h4>
                     <p className='mt-2'>
@@ -51,20 +51,7 @@ const ProjectPage = () => {
                 </div>
               </div>
               {/* Container for extra imgs */}
-              <div className='relative flex flex-wrap gap-2'>
-                {/* A div for each extra img */}
-                {/* Should be a component */}
-                <div className='basis-auto grid-box w-[608px] h[592px] mb-2'>
-                  <img src="" className='modal-item ' alt="{`Image of ${projectInfos.name}`}" />
-                </div>
-                <div className='basis-auto m-auto'>
-                  <img src="" className=' modal-item flex-grow w-[608px] max-h-[750px]' alt="{`Image of ${projectInfos.name}`}" />
-                </div>
-                <div className='basis-auto m-auto'>
-                  <img src="" className=' modal-item flex-grow max-h-[550px] max-w-[820px]' alt="{`Image of ${projectInfos.name}`}" />
-                </div>
 
-              </div>
             </div>
           </div>
 
