@@ -67,3 +67,20 @@
 
     }
     ```
+
+
+  Hover only one element from the same list :
+
+    ``` css
+    .skill-list .skill  {
+      transition: opacity 0.4s ease-in-out ;
+    }
+
+    .skill:hover {
+      opacity: 1;
+    }
+
+    .skill-list:hover .skill:not(:hover) {
+      opacity: 0.4;
+    }
+    ```

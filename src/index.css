@@ -67,9 +67,21 @@
 }
 
 
+/* Hover only one element from the same list */
+.skill-list .skill  {
+  transition: opacity 0.4s ease-in-out ;
+}
+
+.skill:hover {
+  opacity: 1;
+}
+
+.skill-list:hover .skill:not(:hover) {
+  opacity: 0.8;
+}
 
 /* position: 'absolute',
-top: '50%',
+top: '50%',vscode-file://vscode-app/c:/Users/O%20Negrito/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.html
 left: '50%',
 transform: 'translate(-50%, -50%)',
 width: "100%",

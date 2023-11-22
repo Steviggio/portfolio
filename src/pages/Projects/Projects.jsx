@@ -33,8 +33,10 @@ const Projects = () => {
   return (
     // Section containing project tiles
     <section id="projects-section" className="bg-white lg:h-fit flex flex-col justify-center my-10 ">
+      <div className='flex justify-center'>      
+        <h3 className='text-4xl mb-10  '>Mes projets</h3>
+      </div>
 
-      <h3 className='text-5xl mb-10 underline'>Mes projets</h3>
       {/* Tiles Container */}
       <div className="flex-col lg:flex-row flex-wrap md:w-fit justify-center flex pt-6 gap-10 h-fit px-8 mx-auto">
 

@@ -8,7 +8,7 @@ const Header = () => {
     <header >
       <nav className="flex-col md:flex-row md:fixed w-full z-50 top-0 drop-shadow-md border-b border-gray-300 bg-white md:h-20 flex justify-start items-center h-fit">
         <div className="w-2/6 pb-3 flex justify-center items-center">
-          <Link to="/body" href="" className="font-bold text-4xl">
+          <Link to="/portfolio" href="" className="font-bold text-4xl">
             <h1 className="steviggio-title">Stevigg<span className="relative bottom-2 left-1 text-2xl">io</span></h1>
           </Link>
         </div>

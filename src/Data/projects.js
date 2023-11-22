@@ -71,7 +71,7 @@ const projectInfos = [{
   usedLanguages: ["HTML", "CSS", "JavaScript"],
   role: "Frontend developper",
   usedFrameworks: ["React"],
-  description: "Développer une application complète en React en suivant les maquettes Figma fournies.",
+  description: "Développer une application web en React pour un site de réservation de logement.",
   tasks: ["Créer une application web avec React.js.", "Créer des composants indépendants.", "Assurer le bon fonctionnement de l'application en implémentant des tests unitaires.", "Configurer le routing de l'application web avec react-router.", "Développer une interface web avec Sass."],
   img: [Kasa,  KasaFlat, KasaAbout, KasaTablet],
   issues: ["Création de composant indépendant prenant en compte des paramètres.", "Routing de l'application.", "Intégration d'animation en CSS." ],

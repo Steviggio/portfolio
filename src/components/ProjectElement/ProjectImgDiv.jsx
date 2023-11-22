@@ -4,9 +4,9 @@ import { projectInfos } from "../../Data/projects";
 
 
 const ProjectImgDiv = () => {
-  const [images, setImages] = useState([]);
 
-  const imagesArray = useMemo(() => getProjectInfoByName(projectInfos, "Kasa"))
+  const name = "Kasa"
+  const imagesArray = useMemo(() => getProjectInfoByName(projectInfos, name))
   console.log(imagesArray)
 
   return (
