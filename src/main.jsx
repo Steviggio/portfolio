@@ -2,23 +2,13 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
-import ProjectPage from './pages/Projects/ProjectPage.jsx'
-import ProjectImgDiv from './components/ProjectElement/ProjectImgDiv.jsx'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 
 const router = createBrowserRouter([
   {
     path: "/portfolio",
     element: <App />,
-  },
-  {
-    path: '/portfolio/project-page/:name',
-    element: <ProjectPage />
-  },
-  {
-    path: "/portfolio/project-img",
-    element: <ProjectImgDiv />
   }
 ])
 

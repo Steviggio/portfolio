@@ -23,10 +23,7 @@ import confluence from "../assets/icons/Confluence/confluence-96.svg";
 import jira from "../assets/icons/Jira/jira-96.svg";
 import nestjs from "../assets/icons/NestJs/nestjs-96.svg"
 import tailwind from "../assets/icons/Tailwind/tailwindcss-96.png"
-// masteredToolstemplate = {
-//    name: "",
-//    icon: ""
-// }
+
 
 const masteredTools = [{
    name: "Github",

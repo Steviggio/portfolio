@@ -17,13 +17,11 @@ const SkillsList = ({ name }) => {
   }
 
   return (
-    <div className="flex flex-col items-center w-fit h-fit mx-2 skill ">
-      <ul className="flex gap-2">
-        <div>
-          <li className="w-20 h-20 rounded-full flex justify-center items-center m-1 pt-1">
+    <div className="flex flex-col items-center w-fit h-fit mx-auto skill">
+      <ul className="">
+          <li className="w-12 h-12 md:w-14 md:h-14 lg:w-20 lg:h-20 rounded-full flex justify-center items-center m-1 pt-1">
             <img className="rounded-lg " src={skillInfo.icon} alt={`${name} logo`} />
           </li>
-        </div>
       </ul>
       <h4 className="mb-1 mx-2 text-lg font-semibold italic font-Libre-franklin py-1 hover:opacity-100">{skillInfo.name}</h4>
     </div>

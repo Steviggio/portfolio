@@ -19,6 +19,7 @@ export default {
 
       },
       colors: {
+        "blue-back": "#D2E0FB",
         "dark-grey": "#323232",
         "brown-bg": "#ad8a62",
         "light-blue": "#EFFAFD",

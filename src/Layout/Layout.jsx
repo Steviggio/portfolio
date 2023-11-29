@@ -1,6 +1,6 @@
-import React, { useRef } from "react";
+import React from "react";
 import Header from "./Header/Header";
-import Body from "../pages/Body/Body";
+import Home from "../pages/Home/Home";
 import About from '../pages/About/About';
 import Projects from "../pages/Projects/Projects";
 import Footer from "./Footer/Footer";
@@ -11,7 +11,7 @@ const Layout = () => {
     <>
       <Header />
       <main>
-        <Body />
+        <Home />
         <About />
         <Projects />
       </main>

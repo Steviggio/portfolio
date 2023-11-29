@@ -11,16 +11,16 @@ const SocialData = [{
   icon: githubLogo,
   link: "https://github.com/Steviggio",
 },
-{
-  platform: "Linkedin",
-  icon: linkedinLogo,
-  link: "https://www.linkedin.com/in/stevemothmora/",
-},
-{
-  platform: "twitter",
-  icon: twitterLogo,
-  link: "https://twitter.com/Steviggio"
-},
+// {
+//   platform: "Linkedin",
+//   icon: linkedinLogo,
+//   link: "https://www.linkedin.com/in/stevemothmora/",
+// },
+// {
+//   platform: "twitter",
+//   icon: twitterLogo,
+//   link: "https://twitter.com/Steviggio"
+// },
 {
   platform: "medium",
   icon: mediumLogo,

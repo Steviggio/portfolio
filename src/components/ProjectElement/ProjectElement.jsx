@@ -54,7 +54,7 @@ const ProjectElement = ({ project, icons, open }) => {
             )
           })}</ul> */}
         {/* </div> */}
-        {/* <p>Lien vers le Github : <a className='font-bold' target='_blank' href={projectInfo.githubLink}>{projectInfo.name}</a></p> */}
+
       </div>
     </>
   )

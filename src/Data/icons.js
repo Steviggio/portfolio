@@ -72,27 +72,6 @@ const kasaIcons = [{
   iconUrl: reactIcon
 },]
 
-const bluelIcons = [{
-
-}]
-
-const ninaIcons = [{
-  name: "",
-  iconUrl: "", 
-},
-{
-  name: "",
-  iconUrl: "", 
-},
-{
-  name: "",
-  iconUrl: "", 
-},
-{
-  name: "",
-  iconUrl: "", 
-}
-]
 
 
 export { iconsList, mvgIcons, bookiIcons, kasaIcons };
