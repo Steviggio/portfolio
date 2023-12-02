@@ -5,7 +5,7 @@ import Hover from "../Hover/Hover";
 
 
 
-const ProjectElement = ({ project, icons, open }) => {
+const ProjectElement = ({ project, open }) => {
   const projectInfo = getProjectInfoByName(projectInfos, project)
 
 

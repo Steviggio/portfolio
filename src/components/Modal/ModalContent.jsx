@@ -41,7 +41,7 @@ const ModalContent = ({ name, onClose }) => {
                       })}
                     </ul>
                   </div>
-                  <p className="text-sm md:text-base">Lien vers le Github : <a className='font-bold ' target='_blank' href={projectInfo.githubLink}>{projectInfo.name}</a></p>
+                  <p className="text-sm md:text-base">Lien vers le Github : <a className='font-bold text-lg' target='_blank' href={projectInfo.githubLink}>{projectInfo.name}</a></p>
                 </div>
               </div>
               {/* Container for extra imgs */}

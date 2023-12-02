@@ -23,6 +23,7 @@ import confluence from "../assets/icons/Confluence/confluence-96.svg";
 import jira from "../assets/icons/Jira/jira-96.svg";
 import nestjs from "../assets/icons/NestJs/nestjs-96.svg"
 import tailwind from "../assets/icons/Tailwind/tailwindcss-96.png"
+import redux from "../assets/icons/Redux/redux-48.svg"
 
 
 const masteredTools = [{
@@ -124,6 +125,10 @@ const masteredTools = [{
 {
    name: "Jira",
    icon: jira
+},
+{
+   name: "Redux",
+   icon: redux
 }
 ]
 

@@ -25,7 +25,7 @@ const Footer = () => {
           <div className="flex pb-2 md:pb-5">
             {datas.map((item, index) => {
               return (
-                <a key={index} className="bg-white rounded-xl m-2 p-2 hover:scale-125 duration-300" href={item.link} target="_blank"><img className="h-[40px]" src={item.icon} alt={`${item.platform} logo`} /></a>)
+                <a key={index} className="bg-white border rounded-xl m-2 p-2 hover:scale-125 duration-300" href={item.link} target="_blank"><img className="h-[40px]" src={item.icon} alt={`${item.platform} logo`} /></a>)
             })}
           </div>
         </div>

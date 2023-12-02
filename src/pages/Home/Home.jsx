@@ -12,7 +12,7 @@ const Home = () => {
             <h3 className="pl-3 text-4xl md:text-5xl lg:text-6xl underline">Steviggio</h3>
             <TypeAnimation
               sequence={[
-                "Moi, c'est Steve et j'utilise React.js ainsi que Node.js pour créer des applications web dynamiques et responsives.",
+                "Moi, c'est Steve et je suis un développeur JavaScript spécialisé en React.js & Node.js.",
                 () => {
                   console.log("Message displayed.");
                 },
