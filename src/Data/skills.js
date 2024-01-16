@@ -47,11 +47,11 @@ const masteredTools = [{
    icon: js
 },
 {
-   name: "React.js",
+   name: "React",
    icon: react
 },
 {
-   name: "Node.js",
+   name: "Node",
    icon: node
 },
 {
@@ -71,7 +71,7 @@ const masteredTools = [{
    icon: babel
 },
 {
-   name: "jest",
+   name: "Jest",
    icon: jest
 },
 {
@@ -91,7 +91,7 @@ const masteredTools = [{
    icon: nextjs
 },
 {
-   name: "PostGreSql",
+   name: "PostGreSQL",
    icon: postgresql
 },
 {
@@ -99,7 +99,7 @@ const masteredTools = [{
    icon: python
 },
 {
-   name: "Express.js",
+   name: "Express",
    icon: express
 },
 {
@@ -129,7 +129,40 @@ const masteredTools = [{
 {
    name: "Redux",
    icon: redux
-}
+},
+// Need to add these skills in About section 
+// {
+//    name: "Postman",
+//    icon: postman
+// },
+// {
+//    name: "Webpack",
+//    icon: webpack
+// },
+// {
+//    name: "Git",
+//    icon: git
+// },
+// {
+//    name: "Mongoose",
+//    icon: mongoose
+// },
+// {
+//    name: "Redux",
+//    icon: redux
+// },
+// {
+//    name: "Kubernetes",
+//    icon: kubernetes
+// },
+// {
+//    name: "Nginx",
+//    icon: nginx
+// },
+// {
+//    name: "Docker",
+//    icon: docker
+// }
 ]
 
 export { masteredTools }; 

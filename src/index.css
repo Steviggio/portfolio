@@ -21,6 +21,7 @@
 
   .steviggio-title {
     font-family: 'Kaushan Script', cursive;
+    
   }
 
   .input-props {
@@ -40,6 +41,7 @@
     scroll-behavior: smooth;
     min-width: 478px;
   }
+  
 
 }
 

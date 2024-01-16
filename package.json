@@ -48,8 +48,9 @@
     "jsdom": "^22.1.0",
     "postcss": "^8.4.29",
     "react-test-renderer": "^18.2.0",
-    "tailwindcss": "^3.3.3",
-    "vite": "^4.4.5"
+    "tailwindcss": "^3.4.1",
+    "vite": "^4.4.5",
+    "vite-plugin-compression": "^0.5.1"
   },
   "homepage": "https://Steviggio.github.io/portfolio"
 }
