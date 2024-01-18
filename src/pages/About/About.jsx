@@ -19,7 +19,10 @@ const About = () => {
               Développeur JavaScript, je développe des interfaces dynamiques et responsives principalement avec React et TypeScript ainsi que des API RESTFUL avec Node.js et le framework NestJS.
             </p>
           </div>
+          {/* Div containing my downloadable resume */}
+          <div>
 
+          </div>
         </div>
 
 
@@ -31,7 +34,7 @@ const About = () => {
             <div className="flex flex-col w-fit">
               {/* <h4 className="absolute -top-8 left-14 shadow- px-5 text-xl pb-1 w-fit flex flex-row flex-nowrap">Langages maitrisés</h4> */}
               <div className="justify-center flex flex-col rounded-md p-1 shadow-md border-t-2 skill-list bg-blue-50 lg:max-w-[600px]">
-                <h3 className="lg:text-xl border-b-2 w-4/5 mx-auto">Frontend</h3>
+                <h3 className="lg:text-xl border-b-2 w-4/5 mx-auto">Front-end</h3>
                 <div className="flex flex-wrap justify-evenly mt-5 ">
                   <SkillsList name='React' />
                   <SkillsList name='NextJS' />
@@ -44,7 +47,7 @@ const About = () => {
               </div>
             </div>
             <div className="justify-center flex flex-col rounded-md p-2 shadow-md border-t-2 skill-list bg-blue-50 lg:max-w-[600px]">
-              <h3 className="lg:text-xl border-b-2 w-4/5 mx-auto">Backend</h3>
+              <h3 className="lg:text-xl border-b-2 w-4/5 mx-auto">Back-end</h3>
               <div className="flex flex-wrap justify-evenly mt-5">
                 <SkillsList name='Node' />
                 <SkillsList name='Express' />
@@ -57,11 +60,17 @@ const About = () => {
             </div>
             <div className="justify-center flex flex-col rounded-md p-2 shadow-md border-t-2 skill-list bg-blue-50 md:min-w-[500px] md:max-w-[650px]">
               <h3 className="lg:text-xl border-b-2 w-4/5 mx-auto">J'utilise également</h3>
-              <div className="flex flex-wrap justify-evenly mt-5">
+              <div className="flex flex-wrap lg:gap-2 justify-center mt-5">
+                <SkillsList name="Git" />
                 <SkillsList name='Github' />
                 <SkillsList name='Gitlab' />
                 <SkillsList name="Jira" />
                 <SkillsList name="Confluence" />
+                <SkillsList name="Nginx" />
+                <SkillsList name="Docker" />
+                <SkillsList name="Jenkins" />
+                <SkillsList name="Webpack" />
+                <SkillsList name="Ubuntu" />
               </div>
             </div>
 
