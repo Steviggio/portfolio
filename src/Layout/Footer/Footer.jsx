@@ -2,6 +2,7 @@ import React from "react";
 import SocialData from "../../Data/socials";
 import Mail from "../../assets/icons/mail/white-mail-48.png"
 
+
 const Footer = () => {
   const datas = SocialData;
   return (
@@ -12,9 +13,9 @@ const Footer = () => {
         <div className="flex flex-col px-2 md:px-10 justify-center shadow-md md:items-start rounded-md py-6 w-fit md:ml-auto gap-3 bg-white">
           <h3 className="text-lg mb-3 underline underline-offset-4">Contact</h3>
           <div className="flex gap-2">
-            <a className="flex justify-center gap-2 items-center text-sm rounded-lg focus:outline-0 hover:outline-0"
+            <a className="flex justify-center gap-2 items-center text-sm rounded-lg focus:outline-0 hover:outline-0 hover:scale-110 duration-300"
               href="mailto:steviggio@gmail.com" type="email" >Via mail<img src={Mail} className="w-6 h-6" alt="" /></a>
-            <a className="flex justify-center text-white gap-2 items-center text-sm rounded-lg focus:outline-0 hover:outline-0 bg-[#0766AD]"
+            <a className="flex justify-center text-white gap-2 items-center text-sm rounded-lg focus:outline-0 hover:outline-0 bg-[#0766AD] hover:scale-110 duration-300"
               href="https://www.linkedin.com/in/stevemothmora/" target="_blank" type="email" >Via InMail</a>
           </div>
         </div>

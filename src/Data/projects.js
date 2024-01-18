@@ -50,7 +50,7 @@ const projectInfos = [{
   solutions: ["Création à partir de 0 d'une API RESTFUL grâce à Express.js.", "Implémentation de tests unitaires.", "Intégration de middlewares.", "Création d'un système CRUD sécurisé.", "Création d'un système d'authentification."],
   problematic: "Intégration d'une maquette en HTML/CSS pour un site de de réservation de logement.",
   mainImg: MVGHome,
-  githubLink: "https://github.com/Steviggio/Booki"
+  githubLink: "https://github.com/Steviggio/mvg-expressjs-api"
 },
 {
   name: "Booki",
@@ -78,7 +78,7 @@ const projectInfos = [{
   solutions: ["Identifications des éléments prenant en compte des paramètres afin de les rendre réutilisables.", "Apprentissage du routing grâce à react-router.", "Développement d'une interface web en Sass."],
   problematic: "Intégration d'une maquette en HTML/CSS pour un site de réservation de logement.",
   mainImg: Kasa,
-  githubLink: "https://github.com/Steviggio/Booki"
+  githubLink: "https://github.com/Steviggio/Kasa"
 },
 {
   name: "Sophie Bluel",
@@ -91,7 +91,7 @@ const projectInfos = [{
   solutions: ["Identification des différentes parties d'une maquette.", "Implémentation de breakpoints et utilisation de media queries pour l'aspect responsive."],
   problematic: "Intégration d'une maquette en HTML/CSS pour un site de de réservation de logement.",
   mainImg: {},
-  githubLink: "https://github.com/Steviggio/Booki"
+  githubLink: "https://github.com/Steviggio/mvg-expressjs-api"
 },
 {
   name: "Nina Carducci",

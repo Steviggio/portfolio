@@ -2,8 +2,14 @@ import React, { useState } from "react";
 import { Box, Modal } from "@mui/material"
 import { getProjectInfoByName } from "../../function/getProjectInfo";
 import { projectInfos } from '../../Data/projects';
-import { useAsyncError } from "react-router-dom";
+import { masteredTools } from "../../Data/skills";
 
+const skillsByName = {};
+masteredTools.forEach((skill) => {
+  skillsByName[skill.name] = skill;
+})
+
+const github = skillsByName["Github"]
 
 const ModalContent = ({ name, onClose }) => {
   const [open, setOpen] = useState(true)
@@ -41,7 +47,11 @@ const ModalContent = ({ name, onClose }) => {
                       })}
                     </ul>
                   </div>
-                  <p className="text-sm md:text-base">Lien vers le Github : <a className='font-bold text-lg' target='_blank' href={projectInfo.githubLink}>{projectInfo.name}</a></p>
+                  <p className="text-sm md:text-base">
+                    <a className='flex items-center font-bold text-lg' target='_blank' href={projectInfo.githubLink}>
+                      Accéder au repo : <img className="bg-white border ml-3 w-10 h-10 rounded-xl  hover:scale-125 duration-300" src={github.icon} alt="" />
+                    </a>
+                  </p>
                 </div>
               </div>
               {/* Container for extra imgs */}
