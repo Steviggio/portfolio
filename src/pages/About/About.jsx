@@ -16,7 +16,12 @@ const About = () => {
               {/* <img src={profilePic} className="rounded-full w-4/12 " alt={`${profilePic} picture`} /> */}
             </div>
             <p className="leading-relaxed lg:px-4 text-sm md:text-lg mb-5 text-left ">
-              Développeur JavaScript, je développe des interfaces dynamiques et responsives principalement avec React et TypeScript ainsi que des API RESTFUL avec Node.js et le framework NestJS.
+              Développeur JavaScript, je développe des interfaces dynamiques et responsives 
+              principalement avec React et TypeScript ainsi que des API RESTFUL avec Node.js et 
+              le framework NestJS.
+
+              Ayant démarré l'apprentissage de javascript en autodidacte, je me suis tourné vers React.js du côté front-end afin de pouvoir créer des applications modernes, interactive et dynamique. 
+              
             </p>
           </div>
           {/* Div containing my downloadable resume */}
