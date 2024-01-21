@@ -24,7 +24,7 @@ const ModalContent = ({ name, onClose }) => {
         onClose={onClose}
       >
         <Box id="scroll-bar" className='modal-props'>
-          <section className='flex overflow-auto relative h-full'>
+          <section className='flex relative h-full'>
             <button className='font-bold absolute mb-3' onClick={onClose}>Fermer</button>
             <div className='flex flex-col w-full mt-7 gap-3'>
               <div className='flex flex-col-reverse lg:flex-row'>
@@ -47,9 +47,9 @@ const ModalContent = ({ name, onClose }) => {
                       })}
                     </ul>
                   </div>
-                  <p className="text-sm md:text-base">
-                    <a className='flex items-center font-bold text-lg' target='_blank' href={projectInfo.githubLink}>
-                      Accéder au repo : <img className="bg-white border ml-3 w-10 h-10 rounded-xl  hover:scale-125 duration-300" src={github.icon} alt="" />
+                  <p className="flex items-center md:text-base font-bold text-base">
+                    Accéder au repo : <a target='_blank' href={projectInfo.githubLink}>
+                      <img className="bg-white border ml-3 w-10 h-10 rounded-xl  hover:scale-125 duration-300" src={github.icon} alt="" />
                     </a>
                   </p>
                 </div>

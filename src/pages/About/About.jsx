@@ -10,18 +10,18 @@ const About = () => {
           <div className=" flex flex-col justify-evenly text-justify shadow-2xl rounded-3xl bg-white w-fit px-5">
             <div className="flex flex-row justify-evenly items-center">
               <div>
-                <h4 className="my-6 text-xl flex w-44 justify-center
-              pr-1 drop-shadow-xl skew-x-">À propos de moi</h4>
+                <h4 className="my-6 text-2xl flex justify-center
+              pr-1 drop-shadow-xl underline underline-offset-2 w-fit">À propos de moi</h4>
               </div>
               {/* <img src={profilePic} className="rounded-full w-4/12 " alt={`${profilePic} picture`} /> */}
             </div>
             <p className="leading-relaxed lg:px-4 text-sm md:text-lg mb-5 text-left ">
-              Développeur JavaScript, je développe des interfaces dynamiques et responsives 
-              principalement avec React et TypeScript ainsi que des API RESTFUL avec Node.js et 
+              Passionné de langues et de culture web, j'ai démarré l'apprentissage de Javascript en autodidacte à partir de 2018,
+              et j'ai ensuite décidé de prendre en main React.js et Node.js afin de pouvoir officier de manière polyvalente dans le monde du développement.
+              <br /> <br />
+              Désormais, développeur JavaScript, je développe des interfaces dynamiques et responsives
+              avec React et TypeScript ainsi que des API RESTFUL avec Node.js et
               le framework NestJS.
-
-              Ayant démarré l'apprentissage de javascript en autodidacte, je me suis tourné vers React.js du côté front-end afin de pouvoir créer des applications modernes, interactive et dynamique. 
-              
             </p>
           </div>
           {/* Div containing my downloadable resume */}
