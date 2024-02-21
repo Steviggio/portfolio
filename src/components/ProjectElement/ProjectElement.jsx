@@ -11,11 +11,11 @@ const ProjectElement = ({ project, open }) => {
 
   return (
     <>
-    {/* Complete project thumbnail */}
+      {/* Complete project thumbnail */}
       <div onClick={open} className="cursor-pointer flex relative flex-col lg:w-[410px] items-center rounded-xl shadow-md h-fit">
         <figure className='relative w-full h-full'>
           {/* responsive behavior of the presentation img */}
-          <img className="w-[524px] h-[320px] w- object-cover rounded-xl shadow-sm mx-auto" src={projectInfo.mainImg} alt={`Homepage of ${projectInfo.name}`} />
+          <img className="w-[524px] h-[320px] object-cover rounded-xl shadow-sm mx-auto" src={projectInfo.mainImg} alt={`Homepage of ${projectInfo.name}`} />
           <figcaption className='absolute bg-black bg-opacity-60 top-0 text-white flex justify-center items-center w-full h-full rounded-xl opacity-0 hover:opacity-100'>
             <div className='relative w-full h-full flex justify-center'>
               <Hover name={projectInfo.name} />
@@ -46,9 +46,9 @@ const ProjectElement = ({ project, open }) => {
         </div> */}
         {/* <div className='h-fit w-fit flex flex-col justify-center pr-4 bg-white rounded-lg  shadow-md'> */}
 
-          {/* <h5 className='underline text-xl'>Langages utilisés</h5> */}
-          {/* Used icons List */}
-          {/* <ul className='flex gap-10 justify-center m-3'>{icons.map((item, index) => {
+        {/* <h5 className='underline text-xl'>Langages utilisés</h5> */}
+        {/* Used icons List */}
+        {/* <ul className='flex gap-10 justify-center m-3'>{icons.map((item, index) => {
             return (
               <li className="flex items-center" key={index}><img className='w-16' src={item.iconUrl} alt={`${item.name} logo`} /></li>
             )

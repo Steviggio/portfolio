@@ -17,6 +17,22 @@ const ModalContent = ({ name, onClose }) => {
   const projectInfo = getProjectInfoByName(projectInfos, name)
   const images = projectInfo.img
 
+  // if (projectInfo.githubLink === 1) {
+  //   <p className="flex items-center md:text-base font-bold text-base">
+  //     Accéder au repo : <a target='_blank' href={projectInfo.githubLink}>
+  //       <img className="bg-white border ml-3 w-10 h-10 rounded-xl  hover:scale-125 duration-300" src={github.icon} alt="" />
+  //     </a>
+  //   </p>
+  // } else {
+  //   projectInfo.githubLink.map((link) => {
+  //     <p className="flex items-center md:text-base font-bold text-base">
+  //       Accéder au repo : <a target='_blank' href={link}>
+  //         <img className="bg-white border ml-3 w-10 h-10 rounded-xl  hover:scale-125 duration-300" src={github.icon} alt="" />
+  //       </a>
+  //     </p>
+  //   })
+  // }
+
   return (
     <>
       <Modal
@@ -47,11 +63,29 @@ const ModalContent = ({ name, onClose }) => {
                       })}
                     </ul>
                   </div>
-                  <p className="flex items-center md:text-base font-bold text-base">
-                    Accéder au repo : <a target='_blank' href={projectInfo.githubLink}>
-                      <img className="bg-white border ml-3 w-10 h-10 rounded-xl  hover:scale-125 duration-300" src={github.icon} alt="" />
-                    </a>
-                  </p>
+                  {Array.isArray(projectInfo.githubLink) ? (
+                    // If githubLink is an array, render multiple links
+                    <>
+                      <p className="flex items-center md:text-base font-bold text-xs gap-1 md:gap-2">
+                        Accéder aux repos :
+                        {projectInfo.githubLink.map((link, index) => (
+                          <>
+                            <a key={index} target='_blank' href={Object.values(link)}>
+                              <img className="bg-white border ml-3 w-6 h-6 md:w-10 md:h-10 rounded-xl hover:scale-125 duration-300" src={github.icon} alt="" />
+                            </a>
+                            <span>{Object.keys(link)}</span>
+                          </>
+                        ))}
+                      </p>
+                    </>
+                  ) : (
+                    // If githubLink is a single link, render it
+                    <p className="flex items-center md:text-base font-bold text-base">
+                      Accéder au repo : <a target='_blank' href={projectInfo.githubLink}>
+                        <img className="bg-white border ml-3 w-10 h-10 rounded-xl  hover:scale-125 duration-300" src={github.icon} alt="" />
+                      </a>
+                    </p>
+                  )}
                 </div>
               </div>
               {/* Container for extra imgs */}
@@ -67,5 +101,7 @@ const ModalContent = ({ name, onClose }) => {
     </>
   )
 }
+
+
 
 export default ModalContent;
