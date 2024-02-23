@@ -4,7 +4,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section id="about-section" className="relative h-screen flex justify-center items-center bg-royal-blue py-10">
+    <section id="about-section" className="relative h-fit xl:h-screen flex justify-center items-center bg-royal-blue py-10">
       <div className="flex flex-col xl:flex-row mx-6 gap-7 w-10/12">
         <div className="flex flex-col w-4/5 sm:w-3/5 lg:w-2/5 gap-5 lg:py-16 h-full mx-auto my-auto ">
           <div className=" flex flex-col justify-evenly text-justify shadow-2xl rounded-3xl bg-white w-fit px-5">
@@ -19,9 +19,7 @@ const About = () => {
               Passionné de langues et de culture web, j'ai démarré l'apprentissage de Javascript en autodidacte à partir de 2018,
               et j'ai ensuite décidé de prendre en main React.js et Node.js afin de pouvoir officier de manière polyvalente dans le monde du développement.
               <br /> <br />
-              Désormais, développeur JavaScript, je développe des interfaces dynamiques et responsives
-              avec React et TypeScript ainsi que des API RESTFUL avec Node.js et
-              le framework NestJS.
+              Je développe des interfaces graphiques dynamiques et modernes avec React.js/Next.js et je développe des API RESTful évolutives et  avec Express.js/Nest.js
             </p>
           </div>
           {/* Div containing my downloadable resume */}
