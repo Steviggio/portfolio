@@ -36,7 +36,7 @@ const Footer = () => {
         <div className="font-thin my-5 text-sm flex w-[400px] h-16 items-center">
           Ce site a été réalisé à la main pour un projet Openclassrooms et ne collecte aucune donnée. Il est déployé avec Nginx sur un VPS sous Ubuntu.
         </div>
-        <a href="/" className="my-3 pt-1">Steviggio.com </a>
+        <a href="/" className="my-3 pt-1">Steviggio.fr </a>
       </div>
     </footer>
   )

@@ -16,10 +16,10 @@ const About = () => {
               {/* <img src={profilePic} className="rounded-full w-4/12 " alt={`${profilePic} picture`} /> */}
             </div>
             <p className="leading-relaxed lg:px-4 text-sm md:text-lg mb-5 text-left ">
-              Passionné de langues et de culture web, j'ai démarré l'apprentissage de Javascript en autodidacte à partir de 2018,
+              Passionné de langues et de culture web, je suis un jeune développeur ayant démarré l'apprentissage de Javascript en autodidacte à partir de 2020,
               et j'ai ensuite décidé de prendre en main React.js et Node.js afin de pouvoir officier de manière polyvalente dans le monde du développement.
               <br /> <br />
-              Je développe des interfaces graphiques dynamiques et modernes avec React.js/Next.js et je développe des API RESTful évolutives et  avec Express.js/Nest.js
+              Je développe des interfaces graphiques dynamiques et modernes avec React.js/Next.js et je développe des API RESTful évolutives avec Express.js/Nest.js
             </p>
           </div>
           {/* Div containing my downloadable resume */}
