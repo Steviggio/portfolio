@@ -21,7 +21,7 @@
 
   .steviggio-title {
     font-family: 'Kaushan Script', cursive;
-    
+
   }
 
   .input-props {
@@ -41,7 +41,12 @@
     scroll-behavior: smooth;
     min-width: 478px;
   }
-  
+
+  main {
+    margin: 0 auto;
+    max-width: 1400px;
+  }
+
 
 }
 
@@ -75,8 +80,8 @@
 
 
 /* Hover only one element from the same list */
-.skill-list .skill  {
-  transition: opacity 0.4s ease-in-out ;
+.skill-list .skill {
+  transition: opacity 0.4s ease-in-out;
 }
 
 .skill:hover {
@@ -90,4 +95,3 @@
 .typewriting {
   font-size: 1.5em
 }
-

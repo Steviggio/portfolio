@@ -34,7 +34,7 @@ const Footer = () => {
 
       <div className="bg-black w-full h-fit mt-10 text-white flex items-center justify-center flex-col">
         <div className="font-thin my-5 text-sm flex w-[400px] h-16 items-center">
-          Ce site a été réalisé à la main pour un projet Openclassrooms et ne collecte aucune donnée. Il est déployé avec Nginx sur un VPS sous Ubuntu.
+          Ce site a été réalisé à la main et il est déployé avec Nginx sur un VPS sous Ubuntu.
         </div>
         <a href="/" className="my-3 pt-1">Steviggio.fr </a>
       </div>

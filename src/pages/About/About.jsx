@@ -18,8 +18,7 @@ const About = () => {
             <p className="leading-relaxed lg:px-4 text-sm md:text-lg mb-5 text-left ">
               Passionné de langues et de culture web, je suis un jeune développeur ayant démarré l'apprentissage de Javascript en autodidacte à partir de 2020,
               et j'ai ensuite décidé de prendre en main React.js et Node.js afin de pouvoir officier de manière polyvalente dans le monde du développement.
-              <br /> <br />
-              Je développe des interfaces graphiques dynamiques et modernes avec React.js/Next.js et je développe des API RESTful évolutives avec Express.js/Nest.js
+              
             </p>
           </div>
           {/* Div containing my downloadable resume */}
@@ -32,7 +31,7 @@ const About = () => {
         {/* Skills / Tools / Languages used */}
         <div className="mx-5 rounded-xl flex flex-col justify-center h-fit ">
           {/* <h3 className="my-5 mb-5 text-2xl text-white">Mes compétences</h3> */}
-          <div className="gap-3 flex flex-col justify-center items-center xl:items-end mb-2 lg:gap-3 sm:gap-3">
+          <div className="gap-3 flex flex-col justify-center items-center mb-2 lg:gap-3 sm:gap-3">
             {/* Different categories of skills */}
             <div className="flex flex-col w-fit">
               {/* <h4 className="absolute -top-8 left-14 shadow- px-5 text-xl pb-1 w-fit flex flex-row flex-nowrap">Langages maitrisés</h4> */}
