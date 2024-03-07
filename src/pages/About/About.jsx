@@ -16,9 +16,9 @@ const About = () => {
               {/* <img src={profilePic} className="rounded-full w-4/12 " alt={`${profilePic} picture`} /> */}
             </div>
             <p className="leading-relaxed lg:px-4 text-sm md:text-lg mb-5 text-left ">
-              Passionné de langues et de culture web, je suis un jeune développeur ayant démarré l'apprentissage de Javascript en autodidacte à partir de 2020,
-              et j'ai ensuite décidé de prendre en main React.js et Node.js afin de pouvoir officier de manière polyvalente dans le monde du développement.
-              
+              Passionné de langues et de culture web, je suis un jeune développeur ayant démarré l'apprentissage de Javascript en autodidacte depuis 2020,
+              j'ai par la suite décidé de prendre en main React.js et Node.js afin de pouvoir officier de manière polyvalente dans le monde du développement.
+
             </p>
           </div>
           {/* Div containing my downloadable resume */}
