@@ -93,7 +93,6 @@ const projectInfos = [{
   description: "Développer le portfolio d'une architecte d'intérieure.",
   tasks: ["Création d'une application web dynamique avec JavaScript.", "Intégration des maquettes Figma.", "Implémentation des fonctionnalités d'authentification.", "Implémentation des fonctionnalités d'ajouts de nouveaux éléments à la base de données."],
   issues: ["Découpage de la maquette pour effectuer l'intégration.", "Intégration des éléments pour les différents formats.", ""],
-  solutions: ["Identification des différentes parties d'une maquette.", "Implémentation de breakpoints et utilisation de media queries pour l'aspect responsive."],
   problematic: "Intégration d'une maquette en HTML/CSS pour un site de de réservation de logement.",
   mainImg: {},
   githubLink: "https://github.com/Steviggio/mvg-expressjs-api"
@@ -107,7 +106,6 @@ const projectInfos = [{
   description: "Optimiser le SEO ainsi que les performances de l'application web et améliorer son accessibilité.",
   tasks: ["Débogage d'une application web.", "Optimisation des performances.", "Optimisation du SEO.", "Mise en place d'un référencement local", "Mise en place de metas tags", "Rapport d'intervention recensant les optimisations effectuées"],
   issues: ["Découpage de la maquette pour effectuer l'intégration.", "Intégration des éléments pour les différents formats.", ""],
-  solutions: ["Identification des différentes parties d'une maquette.", "Implémentation de breakpoints et utilisation de media queries pour l'aspect responsive."],
   problematic: "Débugger et optimiser le site d'une photographe.",
   mainImg: NinaMain,
   githubLink: "https://github.com/Steviggio/seo-optimization-and-debbuging"
