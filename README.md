@@ -1,12 +1,3 @@
-# React + Vite
+<h1> Repo for <a href="https://www.steviggio.fr">www.steviggio.fr </a> </h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-
-- Contact modal to add, sticky style stuck on a corner side ? 
-- Contact section / enhanced | A propos de moi à modifier, section trop petite 
+This is my personal repo, i've deployed on with Nginx on a VPS.
