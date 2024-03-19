@@ -1,6 +1,7 @@
 import React from "react";
 import { TypeAnimation } from 'react-type-animation';
 import profilePic from "../../assets/profile-pic/steve.webp"
+import Icons from "../../components/Icons/Icons";
 
 const Home = () => {
   return (
@@ -34,7 +35,7 @@ const Home = () => {
           <div className="flex flex-grow justify-center items-center ">
             {/* Div containing the development sticker of the differents technos i use (main technos) */}
             <div className="border-2 w-10 h-10" >
-                
+              <Icons />
             </div>
 
           </div>
