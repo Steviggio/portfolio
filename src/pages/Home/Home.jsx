@@ -34,14 +34,22 @@ const Home = () => {
           </div>
           <div className="flex flex-grow justify-center items-center ">
             {/* Div containing the development sticker of the differents technos i use (main technos) */}
-            <div className="border-2 w-10 h-10" >
+            <div className="w-auto h-2/5" >
               <Icons />
             </div>
 
           </div>
         </div>
 
-        <div className="flex justify-end">
+        <div className="flex justify-between pt-10 relative w-full">
+
+          <div className="flex  pl-20">
+            <div className="flex justify-center items-center gap-5 pt-5 w-fit h-fit ">
+                <a href="" className=" hover:duration-1000 px-3 py-3 bg-linkedin rounded-lg text-white">Profil Linkedin</a>
+                <a href="" className=" hover:duration-1000 px-3 py-3 bg-black rounded-lg text-white">Github</a>
+            </div>
+          </div>
+
           <div className="flex flex-col justify-evenly text-justify shadow-xl rounded-3xl bg-white w-2/4 px-5">
             <div className="flex flex-row justify-evenly items-center">
               <div>

@@ -18,6 +18,9 @@ export default {
       boxShadow: {
 
       },
+      // animation: {
+      //   icon_bounce: 'bounce 1s infinite '
+      // },
       colors: {
         "blue-back": "#D2E0FB",
         "dark-grey": "#323232",
@@ -31,7 +34,8 @@ export default {
         'back-beige': '#f5ebe0',
         "brown-font": "#361E0C",
         "green-background": "#2C3E17",
-        "beige-background": "#FDF8F0"
+        "beige-background": "#FDF8F0",
+        "linkedin": "#0077B5"
       },
       fontFamily: {
         "kaush": ['Kaushan Script, cursive',],
