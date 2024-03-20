@@ -45,8 +45,8 @@ const Home = () => {
 
           <div className="flex  pl-20">
             <div className="flex justify-center items-center gap-5 pt-5 w-fit h-fit ">
-                <a href="" className=" hover:duration-1000 px-3 py-3 bg-linkedin rounded-lg text-white">Profil Linkedin</a>
-                <a href="" className=" hover:duration-1000 px-3 py-3 bg-black rounded-lg text-white">Github</a>
+                <a href="https://www.linkedin.com/in/stevemothmora/" className=" hover:duration-1000 px-3 py-3 bg-linkedin rounded-lg text-white">Profil Linkedin</a>
+                <a href="https://github.com/Steviggio" className=" hover:duration-1000 px-3 py-3 bg-black rounded-lg text-white">Github</a>
             </div>
           </div>
 
