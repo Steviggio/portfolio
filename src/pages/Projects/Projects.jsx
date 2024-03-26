@@ -24,7 +24,7 @@ const Projects = () => {
 
   return (
     // Section containing project tiles
-    <section id="projects-section" className="bg-white lg:h-fit flex flex-col justify-center border-t-2 pt-10 my-10 ">
+    <section id="projects-section" className="lg:h-fit flex flex-col justify-center my-10 ">
       <div className='flex justify-center'>
         <h3 className='text-4xl mb-10  '>Mes projets</h3>
       </div>

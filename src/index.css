@@ -35,7 +35,7 @@
 @layer base {
 
   html {
-    background-color: #cae9ff;
+    background-color: #7BAFD4;
     scroll-behavior: smooth;
     width: 100%;
     font-family: "Lexend Deca", sans-serif;
@@ -48,6 +48,7 @@
     background-color: white;
     margin: 0 auto;
     max-width: 1400px;
+    
   }
 
 

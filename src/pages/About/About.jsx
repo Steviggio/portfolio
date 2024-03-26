@@ -5,7 +5,7 @@ import DevSkillsContainer from "../../components/DevSkillsContainer/DevSkillsCon
 
 const About = () => {
   return (
-    <section id="about-section" className=" border-t-2 relative h-fit xl:h-screen flex justify-center items-center  py-10">
+    <section id="about-section" className=" relative h-fit xl:h- flex justify-center items-center py-5">
       <div className="flex justify-center xl:flex-row mx-6 gap-10 w-full">
         {/* <div className="flex flex-col w-4/5 sm:w-3/5 lg:w-2/5 gap-5 lg:py-16 h-full mx-auto my-auto "> */}
         {/* <div className=" flex flex-col justify-evenly text-justify shadow-2xl rounded-3xl bg-white w-fit px-5">
@@ -32,7 +32,7 @@ const About = () => {
         {/* Skills / Tools / Languages used */}
         <div className="mx-5 rounded-xl flex flex-col justify-center h-fit ">
           {/* <h3 className="my-5 mb-5 text-2xl text-white">Mes compétences</h3> */}
-          <div className="gap-3 flex flex-wrap justify-center items-center mb-2 lg:gap-10 sm:gap-3">
+          <div className="gap-5 md:gap-3 flex flex-wrap justify-center items-center mb-2 lg:gap-10 ">
             <DevSkillsContainer titre="Frontend" skills={["React", "NextJS", "JavaScript", "Typescript", "Tailwind", "Redux", "Vite"]} />
             <DevSkillsContainer titre="Backend" skills={["Node", "Express", "NestJs", "MongoDB", "PostGreSQL", "Jest"]} />
             <DevSkillsContainer titre="Outils et plateformes utilisées" skills={["Git", "Github", "Gitlab", "Jira", "Confluence", "Jira", "Nginx", "Docker", "Jenkins", "Webpack", "Ubuntu"]} />

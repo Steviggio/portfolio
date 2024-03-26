@@ -15,6 +15,20 @@ export default {
   ],
   theme: {
     extend: {
+      animation: {
+        "bounce-arrow": "bounce-w 1s ease-in-out infinite"
+      },
+      keyframes: {
+        'bounce-w': {
+          "0%, 100%": {
+            transform: "TranslateX(-25 %);"
+          },
+          "50%": {
+            transform: 'TranslateX(0);'
+          }
+        }
+      },
+
       boxShadow: {
 
       },
@@ -35,7 +49,8 @@ export default {
         "brown-font": "#361E0C",
         "green-background": "#2C3E17",
         "beige-background": "#FDF8F0",
-        "linkedin": "#0077B5"
+        "linkedin": "#0077B5",
+        "carolina-blue": "#7BAFD4"
       },
       fontFamily: {
         "kaush": ['Kaushan Script, cursive',],

@@ -1,12 +1,15 @@
 import React from "react";
 import SocialData from "../../Data/socials";
 import Mail from "../../assets/icons/mail/white-mail-48.png"
+import { useRef } from "react";
 
 
-const Footer = () => {
+const Footer = ({contactSectionRef}) => {
+
+
   const datas = SocialData;
   return (
-    <footer id="contact-section" className="relative shadow-inner flex flex-col bg-light-blue pt-6 h-max">
+    <footer ref={contactSectionRef} id="contact-section" className="relative shadow-inner flex flex-col bg-light-blue pt-6 h-max">
       {/* <h4 className="text-4xl py-10 w-64 mx-auto border-t-4 border-black pt-0 text-left">Me contacter</h4> */}
       <div className=" flex flex-col md:flex-row items-center h-full w-full px-10">
 
