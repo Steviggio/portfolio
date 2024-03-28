@@ -1,12 +1,14 @@
-import React, { useRef } from "react";
+import React, { lazy, useRef } from "react";
 import Header from "./Header/Header";
-import Home from "../pages/Home/Home";
+// import Home from "../pages/Home/Home";
 import About from '../pages/About/About';
 import Projects from "../pages/Projects/Projects";
 import Footer from "./Footer/Footer";
 
+const Home = lazy(() => import("../pages/Home/Home"))
+
 const Layout = () => {
-  
+
   const contactSectionRef = useRef(null);
 
   const scrollToContactSection = () => {

@@ -4,17 +4,18 @@ import profilePic from "../../assets/profile-pic/steve.webp"
 import Icons from "../../components/Icons/Icons";
 import arrow from '../../assets/homeIcons/next.png'
 
+
 const Home = () => {
   return (
     <>
 
-      <section id="body-section" className='h-fit flex-col gap-10 flex mb-10'>
+      <section id="body-section" className='h-fit flex-col md:gap-10 flex mb-10'>
         <div className="flex flex-col items-center md:flex-row w-fit gap-5 lg:gap-0">
-          <div className="flex flex-col lg:flex-row justify-center items-center md:ml-16 mt-20 gap-8 h-fit shadow-md rounded-2xl w-2/3 sm:w-2/4 lg:w-3/5 py-16 bg-home-blue
+          <div className="flex flex-col lg:flex-row justify-center items-center md:ml-16 mt-5 sm:mt-20 gap-3 h-fit shadow-md rounded-2xl w-2/3 sm:w-2/4 lg:w-3/5 py-6 md:py-16 bg-home-blue
           select-none
           ">
             <div className="flex md:pl-8 flex-col w-2/3 justify-center my-auto gap-5 text-left ">
-              <h3 className="text-4xl underline">Steviggio</h3>
+              <h2 className="text-2xl md:text-4xl underline">Steviggio</h2>
               <TypeAnimation
                 sequence={[
                   "Moi, c'est Steve et je suis un développeur JavaScript spécialisé en React.js & Node.js.",
@@ -26,12 +27,12 @@ const Home = () => {
                 speed={90}
                 cursor={true}
                 repeat={1}
-                className='text-xl'
+                className='md:text-xl'
               />
-              <p className="flex items-center gap-3">Ma main stack <span className="h-6 w-6 animation-bounce-w"><img src={arrow} alt="Arrow icon to point the Icons div" /></span> </p>
+              <p className="flex items-center gap-3">Ma main stack <span className="h-6 w-6 animate-bounce-arrow"><img src={arrow} alt="Arrow icon to point the Icons div" /></span> </p>
             </div>
             <div className=" flex flex-col w-1/2 items-center justify-center">
-              <img className='rounded-full w-2/3' src={profilePic} alt="Steviggio's profile picture" />
+              <img className='rounded-full w-[75px] h-[75px] sm:w-[100px] sm:h-[100px] md:w-[150px]  md:h-[150px] lg:w-[190px] lg:h-[190px] xl:w-[220px]  xl:h-[220px]  ' src={profilePic} alt="Steviggio's profile picture" />
             </div>
           </div>
           <div className="flex flex-grow justify-center items-center ">

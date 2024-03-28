@@ -15,22 +15,36 @@ export default {
   ],
   theme: {
     extend: {
+      //       @keyframes bounce {
+      //   0%, 100% {
+      //     transform: translateY(-25%);
+      //     animation-timing-function: cubic-bezier(0.8,0,1,1);
+      //   }
+      //   50% {
+      //     transform: none;
+      //     animation-timing-function: cubic-bezier(0,0,0.2,1);
+      //   }
+      // }
+      // .animate-bounce {
+      //   animation: bounce 1s infinite;
       animation: {
-        "bounce-arrow": "bounce-w 1s ease-in-out infinite"
+        "bounce-arrow": "bounce-w 1s infinite"
       },
       keyframes: {
         'bounce-w': {
           "0%, 100%": {
-            transform: "TranslateX(-25 %);"
+            transform: "translateX(-25%)",
+            transitionTimingFunction: "cubic-bezier(0.8, 0, 1, 1)"
           },
           "50%": {
-            transform: 'TranslateX(0);'
+            transform: 'none',
+            transitionTimingFunction: "cubic-bezier(0, 0, 0.2, 1)"
           }
         }
       },
-
-      boxShadow: {
-
+      transitionTimingFunction: {
+        "start": "cubic-bezier(0.8, 0, 1, 1)",
+        'end': "cubic-bezier(0, 0, 0.2, 1)"
       },
       // animation: {
       //   icon_bounce: 'bounce 1s infinite '

@@ -35,7 +35,7 @@
 @layer base {
 
   html {
-    background-color: #7BAFD4;
+    background-color: white;
     scroll-behavior: smooth;
     width: 100%;
     font-family: "Lexend Deca", sans-serif;
@@ -48,7 +48,6 @@
     background-color: white;
     margin: 0 auto;
     max-width: 1400px;
-    
   }
 
 
@@ -98,4 +97,11 @@
 
 .typewriting {
   font-size: 1.5em
+}
+
+@media (min-width: 875px) {
+  html {
+    background-color: #7BAFD4;
+  }
+
 }
