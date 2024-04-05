@@ -1,9 +1,12 @@
 import React from "react";
+
 import { TypeAnimation } from 'react-type-animation';
 import profilePic from "../../assets/profile-pic/steve.webp"
 import Icons from "../../components/Icons/Icons";
 import arrow from '../../assets/homeIcons/next.png'
-
+// import MothmoraCV from Mothmora_CV.pdf"
+import Button from "../../components/Button/Button";
+import { buttonInfo } from "../../Data/socials";
 
 const Home = () => {
   return (
@@ -46,11 +49,18 @@ const Home = () => {
 
         <div className="flex flex-col md:flex-row justify-around lg:justify-between items-center md:pt-10 relative w-full gap-5">
 
-          <div className="flex md:pl-20">
+          <div className="flex-col flex md:pl-20 gap-2">
             <div className="flex justify-center items-center gap-5 pt-5 w-fit h-fit ">
-              <a href="https://www.linkedin.com/in/stevemothmora/" target="_blank" className=" hover:duration-1000 px-3 py-3 bg-linkedin rounded-lg text-white">Profil Linkedin</a>
-              <a href="https://github.com/Steviggio" target="_blank" className=" hover:duration-1000 px-3 py-3 bg-black rounded-lg text-white">Github</a>
+              {
+                buttonInfo.map((button, index) => {
+                 return <Button key={index} color={button.color} name={button.name} link={button.link} />
+                })
+              }
+
             </div>
+            {/* <div className="flex justify-center items-center h-10">
+              <a download="Mothmora_CV.pdf" href="/Mothmora_CV.pdf"  className="px-5 py-2 rounded-md bg-gray-100">Télécharger mon CV</a>
+            </div> */}
           </div>
 
           <div className="flex flex-col justify-evenly text-justify shadow-xl rounded-3xl bg-white w-2/3 md:w-2/4 px-5 md:mr-10 ">

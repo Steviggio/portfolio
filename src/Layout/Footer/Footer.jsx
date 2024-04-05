@@ -1,5 +1,5 @@
 import React from "react";
-import SocialData from "../../Data/socials";
+import {SocialData} from "../../Data/socials";
 import Mail from "../../assets/icons/mail/white-mail-48.png"
 import { useRef } from "react";
 
