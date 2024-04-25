@@ -1,5 +1,3 @@
-import SkillsList from "../../components/SkillsList/SkillsList";
-import React from "react";
 import DevSkillsContainer from "../../components/DevSkillsContainer/DevSkillsContainer";
 
 

@@ -1,5 +1,3 @@
-import React from "react";
-
 import { TypeAnimation } from 'react-type-animation';
 import profilePic from "../../assets/profile-pic/steve.webp"
 import Icons from "../../components/Icons/Icons";
