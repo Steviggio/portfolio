@@ -45,10 +45,10 @@ export const buttonInfo = [
     name: "Github",
     color: "bg-black"
   },
-  // {
-  //   name: "Télécharger le PDF",
-  //   link: "/Mothmora_CV.pdf",
-  //   color: "bg-gray-100"
-  // }
+  {
+    name: "Télécharger le PDF",
+    link: "/Mothmora_Steve_CV.pdf",
+    color: "bg-gray-500"
+  }
 ]
 
