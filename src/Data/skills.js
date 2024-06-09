@@ -30,6 +30,8 @@ import jenkins from "../assets/icons/Jenkins/icons8-jenkins-48.svg"
 import docker from "../assets/icons/Docker/icons8-docker-48.svg"
 import nginx from "../assets/icons/Nginx/icons8-nginx-48.svg"
 import ubuntu from "../assets/icons/Web/icons8-ubuntu-color-32.png"
+import angular from "../assets/icons/angular/angular_gradient.png"
+import figma from "../assets/icons/figma/Figma-Icon.svg"
 
 const masteredTools = [{
    name: "Github",
@@ -158,7 +160,15 @@ const masteredTools = [{
 },
 {
    name: "Ubuntu",
-   icon: ubuntu
+   icon: ubuntu,
+},
+{
+   name: "Angular",
+   icon: angular
+},
+{
+   name: "Figma",
+   icon: figma
 }
 
 ]

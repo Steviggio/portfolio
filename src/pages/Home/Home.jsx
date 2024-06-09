@@ -2,9 +2,9 @@ import { TypeAnimation } from 'react-type-animation';
 import profilePic from "../../assets/profile-pic/steve.webp"
 import Icons from "../../components/Icons/Icons";
 import arrow from '../../assets/homeIcons/next.png'
-// import MothmoraCV from Mothmora_CV.pdf"
 import Button from "../../components/Button/Button";
 import { buttonInfo } from "../../Data/socials";
+import iconsArray from '../../Data/homeIcons';
 
 const Home = () => {
   return (
@@ -39,7 +39,7 @@ const Home = () => {
           <div className="flex flex-grow justify-center items-center ">
             {/* Div containing the development sticker of the differents technos i use (main technos) */}
             <div className="w-auto h-2/5" >
-              <Icons />
+              <Icons datas={iconsArray} />
             </div>
 
           </div>
@@ -51,7 +51,7 @@ const Home = () => {
             <div className="flex justify-center items-center gap-5 pt-5 w-fit h-fit ">
               {
                 buttonInfo.map((button, index) => {
-                 return <Button key={index} color={button.color} name={button.name} link={button.link} />
+                  return <Button key={index} color={button.color} name={button.name} link={button.link} />
                 })
               }
 
@@ -70,7 +70,7 @@ const Home = () => {
               {/* <img src={profilePic} className="rounded-full w-4/12 " alt={`${profilePic} picture`} /> */}
             </div>
             <p className="leading-relaxed lg:px-4 text-sm md:text-lg mb-5 text-left">
-              Passionné de langues et de culture web, je suis un développeur JS junior ayant démarré l'apprentissage de Javascript en autodidacte en 2020.
+              Passionné de langues et de culture web, je suis un développeur JS junior ayant démarré l'apprentissage de Javascript en autodidacte en 2018.
               J'utilise React.js pour créer des interfaces graphiques dynamique et moderne et Node.js pour développer des API RESTful robustes et évolutives.
 
             </p>

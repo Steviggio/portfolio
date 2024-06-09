@@ -4,15 +4,12 @@ import githubLogo from "../../assets/github-mark/github-mark.webp"
 
 const Header = ({ scrollToContactSection }) => {
 
-
   const topRef = useRef(null);
-
   const scrollToTop = () => {
     if (topRef.current) {
       topRef.current.scrollIntoView({ behavior: "smooth" });
     }
   }
-
 
   const [scrolled, setScrolled] = useState(false);
 

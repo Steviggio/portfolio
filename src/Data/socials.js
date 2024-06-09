@@ -1,5 +1,5 @@
 import githubLogo from "../assets/github-mark/github-mark.png";
-import twitterLogo from "../assets/twitter/logo-black.png";
+// import twitterLogo from "../assets/twitter/logo-black.png";
 import linkedinLogo from "../assets/LinkedIn-Logos/LI-In-Bug.png";
 import mediumLogo from "../assets/icons/Medium/medium-50.png"
 // https://github.com/Steviggio
@@ -46,9 +46,9 @@ export const buttonInfo = [
     color: "bg-black"
   },
   {
-    name: "Télécharger le PDF",
-    link: "/Mothmora_Steve_CV.pdf",
-    color: "bg-gray-500"
+    name: "Télécharger le CV",
+    link: "/Steve_Mothmora_FullStack_CV.pdf",
+    color: "bg-gray-400"
   }
 ]
 
