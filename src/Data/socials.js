@@ -1,9 +1,7 @@
 import githubLogo from "../assets/github-mark/github-mark.png";
-// import twitterLogo from "../assets/twitter/logo-black.png";
 import linkedinLogo from "../assets/LinkedIn-Logos/LI-In-Bug.png";
 import mediumLogo from "../assets/icons/Medium/medium-50.png"
-// https://github.com/Steviggio
-// https://www.linkedin.com/in/stevemothmora/
+
 
 
 export const SocialData = [{
@@ -20,11 +18,6 @@ export const SocialData = [{
   name: "Linkedin",
   color: "bg-black"
 },
-// {
-//   platform: "twitter",
-//   icon: twitterLogo,
-//   link: "https://twitter.com/Steviggio"
-// },
 {
   platform: "medium",
   icon: mediumLogo,

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import githubLogo from "../../assets/github-mark/github-mark.webp"
+import githubLogo from "../../assets/github-mark/github-mark.png"
 
 const Header = ({ scrollToContactSection }) => {
 
@@ -39,7 +39,8 @@ const Header = ({ scrollToContactSection }) => {
             ${scrolled ? "lg:-translate-y-20 lg:duration-[250ms]" : ""
               }`}
 
-            >Stevigg<span className="relative bottom-2 left-[0.20rem] text-2xl">io</span></h1>
+            >Stevigg
+              <span className="relative bottom-2 left-[0.20rem] text-2xl">io</span></h1>
             <a href="https://github.com/Steviggio" target="_blank" className={`invisible lg:visible lg:absolute lg:top-5 
             ${scrolled ? "lg:transition-opacity lg:transform xl:ease-in lg:duration-200" : "lg:transition-opacity lg:transform lg:ease-in lg:duration-200 opacity-0 "}`}>
               <img src={githubLogo} className="w-[45px] h-[45px]" alt="Github logo" /> </a>

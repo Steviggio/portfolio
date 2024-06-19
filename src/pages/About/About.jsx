@@ -8,7 +8,6 @@ const About = () => {
 
         {/* Skills / Tools / Languages used */}
         <div className="mx-5 rounded-xl flex flex-col justify-center h-fit ">
-          {/* <h3 className="my-5 mb-5 text-2xl text-white">Mes compétences</h3> */}
           <div className="gap-5 md:gap-3 flex flex-wrap justify-center items-center mb-2 lg:gap-10 ">
             <DevSkillsContainer title="Frontend" skills={["React", "Vue", "NextJS", "JavaScript", "Typescript", "Tailwind", "Redux", "Vite"]} />
             <DevSkillsContainer title="Backend" skills={["Node", "Express", "NestJs", "MongoDB", "PostGreSQL", "MySQL"]} />

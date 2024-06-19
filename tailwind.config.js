@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-// const plugin = require("tailwindcss/plugin")
+
 
 export default {
   plugins: [
@@ -15,18 +15,6 @@ export default {
   ],
   theme: {
     extend: {
-      //       @keyframes bounce {
-      //   0%, 100% {
-      //     transform: translateY(-25%);
-      //     animation-timing-function: cubic-bezier(0.8,0,1,1);
-      //   }
-      //   50% {
-      //     transform: none;
-      //     animation-timing-function: cubic-bezier(0,0,0.2,1);
-      //   }
-      // }
-      // .animate-bounce {
-      //   animation: bounce 1s infinite;
       animation: {
         "bounce-arrow": "bounce-w 1s infinite"
       },
@@ -46,9 +34,6 @@ export default {
         "start": "cubic-bezier(0.8, 0, 1, 1)",
         'end': "cubic-bezier(0, 0, 0.2, 1)"
       },
-      // animation: {
-      //   icon_bounce: 'bounce 1s infinite '
-      // },
       colors: {
         "blue-back": "#D2E0FB",
         "dark-grey": "#323232",

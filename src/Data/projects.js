@@ -2,20 +2,15 @@ import MVGHome from "../assets/project-modal/MVG/MVG-homepage3.webp";
 import MVGAddBook from "../assets/project-modal/MVG/MVG-addbook.png";
 import MVGSignIn from "../assets/project-modal/MVG/MVG-signin.png";
 import MVGBookPage from "../assets/project-modal/MVG/MVG-bookpage2.png";
-
 import KasaHome from "../assets/project-modal/Kasa/Kasa-homepage2.png";
 import KasaFlat from "../assets/project-modal/Kasa/kasa-flatpage2.png";
 import KasaAbout from "../assets/project-modal/Kasa/kasa-about2.png";
-import BookiImg from "../assets/projects/booki.webp"
 import Kasa from "../assets/project-modal/Kasa/Kasa-home.webp"
 import KasaTablet from "../assets/project-modal/Kasa/Kasa-tablet.webp"
-import mvgHome from "../assets/projects/mvg-home.webp"
 import BookiPCTop from "../assets/project-modal/Booki/pc-top.webp"
 import BookiPCBottom from "../assets/project-modal/Booki/pc-bottom.png"
 import BookiTabletTop from "../assets/project-modal/Booki/tablet_top.png"
 import BookiTabletBottom from "../assets/project-modal/Booki/tablet-bottom.png"
-import BookiPhoneTop from "../assets/project-modal/Booki/phone-top.png"
-import BookiPhoneBottom from "../assets/project-modal/Booki/phone-bottom.png"
 import NinaMain from "../assets/project-modal/Nina/Main-img.webp"
 import NinaReport1 from "../assets/project-modal/Nina/nina-report-1.webp"
 import NinaReport2 from "../assets/project-modal/Nina/nina-report-2.webp"

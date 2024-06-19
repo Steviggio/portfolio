@@ -17,22 +17,6 @@ const ModalContent = ({ name, onClose }) => {
   const projectInfo = getProjectInfoByName(projectInfos, name)
   const images = projectInfo.img
 
-  // if (projectInfo.githubLink === 1) {
-  //   <p className="flex items-center md:text-base font-bold text-base">
-  //     Accéder au repo : <a target='_blank' href={projectInfo.githubLink}>
-  //       <img className="bg-white border ml-3 w-10 h-10 rounded-xl  hover:scale-125 duration-300" src={github.icon} alt="" />
-  //     </a>
-  //   </p>
-  // } else {
-  //   projectInfo.githubLink.map((link) => {
-  //     <p className="flex items-center md:text-base font-bold text-base">
-  //       Accéder au repo : <a target='_blank' href={link}>
-  //         <img className="bg-white border ml-3 w-10 h-10 rounded-xl  hover:scale-125 duration-300" src={github.icon} alt="" />
-  //       </a>
-  //     </p>
-  //   })
-  // }
-
   return (
     <>
       <Modal
